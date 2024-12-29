@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include requirements.txt
+recursive-include loaders *.py
+recursive-include preprocess *.py
+recursive-include model *.py
+recursive-include ext *.py

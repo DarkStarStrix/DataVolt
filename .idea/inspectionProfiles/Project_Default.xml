@@ -1,0 +1,124 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CheckImageSize" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="CssUnusedSymbol" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="688" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="6">
+            <item index="0" class="java.lang.String" itemvalue="(click)" />
+            <item index="1" class="java.lang.String" itemvalue="[(ngModel)]" />
+            <item index="2" class="java.lang.String" itemvalue="*ngFor" />
+            <item index="3" class="java.lang.String" itemvalue="start" />
+            <item index="4" class="java.lang.String" itemvalue="align" />
+            <item index="5" class="java.lang.String" itemvalue="height" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="23">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="hidden-label" />
+            <item index="7" class="java.lang.String" itemvalue="result-canvas" />
+            <item index="8" class="java.lang.String" itemvalue="input-field" />
+            <item index="9" class="java.lang.String" itemvalue="spinner" />
+            <item index="10" class="java.lang.String" itemvalue="file-upload" />
+            <item index="11" class="java.lang.String" itemvalue="loading" />
+            <item index="12" class="java.lang.String" itemvalue="algorithm-form" />
+            <item index="13" class="java.lang.String" itemvalue="workflow-saver-form" />
+            <item index="14" class="java.lang.String" itemvalue="option" />
+            <item index="15" class="java.lang.String" itemvalue="num_cities" />
+            <item index="16" class="java.lang.String" itemvalue="algorithm" />
+            <item index="17" class="java.lang.String" itemvalue="workflow-form" />
+            <item index="18" class="java.lang.String" itemvalue="btn" />
+            <item index="19" class="java.lang.String" itemvalue="body" />
+            <item index="20" class="java.lang.String" itemvalue="h2" />
+            <item index="21" class="java.lang.String" itemvalue="href" />
+            <item index="22" class="java.lang.String" itemvalue="div" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="JSUnusedLocalSymbols" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyDictCreationInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="9">
+            <item index="0" class="java.lang.String" itemvalue="numba" />
+            <item index="1" class="java.lang.String" itemvalue="pygame" />
+            <item index="2" class="java.lang.String" itemvalue="numpy" />
+            <item index="3" class="java.lang.String" itemvalue="flask" />
+            <item index="4" class="java.lang.String" itemvalue="gunicorn" />
+            <item index="5" class="java.lang.String" itemvalue="Pillow" />
+            <item index="6" class="java.lang.String" itemvalue="models" />
+            <item index="7" class="java.lang.String" itemvalue="doenv" />
+            <item index="8" class="java.lang.String" itemvalue="requests" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+          <option value="E722" />
+          <option value="E741" />
+          <option value="E122" />
+          <option value="E128" />
+          <option value="E211" />
+          <option value="E127" />
+          <option value="W605" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N814" />
+          <option value="N813" />
+          <option value="N802" />
+          <option value="N803" />
+          <option value="N806" />
+          <option value="N812" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyRedeclarationInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="list" />
+          <option value="min" />
+          <option value="exit" />
+          <option value="input" />
+          <option value="eval" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyShadowingNamesInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyStatementEffectInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnusedLocalInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="RuffInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>
