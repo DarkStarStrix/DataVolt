@@ -1,5 +1,7 @@
 # Config.py
 
+import configparser
+
 # Data settings
 DATA_PATH = "data/"
 DATA_FILE = "data.csv"
@@ -30,3 +32,5 @@ AUGMENT_SHIFT = True
 METRICS = ['accuracy', 'precision', 'recall', 'f1']
 
 # Deployment settings
+parser = configparser.RawConfigParser()
+parser.add_argument("--model_path", type=str, help="Path to the trained model")

@@ -5,19 +5,28 @@ from preprocess.encoding import Encoder
 from preprocess.Cleaning import DataCleaner
 
 # Load data
-loader = CSVLoader(file_path="C:/Users/kunya/PycharmProjects/DataFlux/data/customers-10000.csv")
-data = loader.load_data()
+loader = CSVLoader (file_path="C:/Users/kunya/PycharmProjects/DataStream/data/customers-10000.csv")
+data = loader.load_data ()
 
 # Create preprocessing steps
-cleaner = DataCleaner(missing_value_strategy='fill')
-scaler = Scaler(method='minmax')
-encoder = Encoder(method='onehot')
+cleaner = DataCleaner (missing_value_strategy='fill')
+scaler = Scaler (method='minmax')
+encoder = Encoder (method='onehot')
 
 # Create and run a pipeline
-pipeline = PreprocessingPipeline(steps=[cleaner, scaler, encoder])
-preprocessed_data = pipeline.process(data)
+pipeline = PreprocessingPipeline (steps=[cleaner, scaler, encoder])
+preprocessed_data = pipeline.process (data)
 
 # Verify results
-print("Original shape:", data.shape)
-print("Preprocessed shape:", preprocessed_data.shape)
-print("\nColumns:", preprocessed_data.columns.tolist())
+print ("Original shape:", data.shape)
+print ("Preprocessed shape:", preprocessed_data.shape)
+print ("\nColumns:", preprocessed_data.columns.tolist ())
+
+
+# Example/Basic_Pipeline.py
+
+class Basic_Pipeline:
+    @staticmethod
+    def run():
+        # Your pipeline code here
+        print ("Running the pipeline")
