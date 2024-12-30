@@ -1,4 +1,4 @@
-name: dataflux
+name: datastream
 version: 0.0.1
 description: A modular toolkit for data engineering pipelines
 author: Your Name
