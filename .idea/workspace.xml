@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="YAML File for build">
-      <change afterPath="$PROJECT_DIR$/Data_Generators/Data_Gen_Performance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Example/Basic_Pipeline_Performance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Loaders/Loaders_Performance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_28_2024_7_40_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Generators/Dense_Data_Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Generators/Dense_Data_Generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Generators/General_Data_Features.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Generators/General_Data_Features.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Generators/Sparse_Data_Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Generators/Sparse_Data_Generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Generators/Tokenizing_Text_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Generators/Tokenizing_Text_Data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Generators/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Generators/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Basic_Pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Basic_Pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Performance metrics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +195,9 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "writerside.last.selected.productDataFlux": "gs"
+  },
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
 }]]></component>
   <component name="RunManager" selected="Python.Loaders_Performance">
@@ -362,7 +353,7 @@
       <workItem from="1735495559175" duration="1235000" />
       <workItem from="1735528604382" duration="48000" />
       <workItem from="1735528679603" duration="3710000" />
-      <workItem from="1735578266387" duration="7160000" />
+      <workItem from="1735578266387" duration="8066000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: Add DataStream project with modular toolkit for data engineering pipelines">
       <option name="closed" value="true" />
@@ -468,7 +459,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735532450565</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="YAML File for build">
+      <option name="closed" value="true" />
+      <created>1735586535575</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1735586535575</updated>
+    </task>
+    <task id="LOCAL-00015" summary="YAML File for build">
+      <option name="closed" value="true" />
+      <created>1735587297609</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1735587297609</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

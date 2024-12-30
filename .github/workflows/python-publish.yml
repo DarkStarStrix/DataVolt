@@ -3,7 +3,7 @@ name: datastream
 
 on:
   release:
-    types: [published]
+    types: [0.0.1]
 
 permissions:
   contents: read
