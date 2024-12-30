@@ -22,7 +22,7 @@ setup(
         "scikit-learn==1.5.0",
         'neptune-client>=0.9.0',
         "torch==2.5.0",
-        'setuptools~=70.0.0',
+        'setuptools>=70.0.0',
         'pillow~=11.0.0',
         'joblib~=1.4.2',
         'boto3~=1.35.88',
