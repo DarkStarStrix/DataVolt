@@ -4,65 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Pipeline fix">
-      <change beforePath="$PROJECT_DIR$/../CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Example/Basic_Pipeline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Loaders/Custom_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Loaders/csv_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Loaders/s3_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Loaders/sql_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MANIFEST.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Models/model_export.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.MD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tests/Test_Pipeline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tests/Test_data_loader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/c.list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/cfg/buildprofiles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/gs.tree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/images/completion_procedure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/images/completion_procedure_dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/images/convert_table_to_xml.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/images/convert_table_to_xml_dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/images/new_topic_options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/images/new_topic_options_dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/topics/starter-topic.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/v.list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Writerside/writerside.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/customers-100.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/customers-1000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/customers-10000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/customers-100000.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/class_index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/coverage_html_cb_497bf287.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/favicon_32_cb_58284776.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/function_index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/keybd_closed_cb_ce680311.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/status.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/style_cb_718ce007.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/z_3e3005ae7443f751_Test_Pipeline_py.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/z_3e3005ae7443f751_Test_data_loader_py.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/z_3e3005ae7443f751___init___py.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/z_4e9cd68b6a9c9d10_Cleaning_py.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/z_4e9cd68b6a9c9d10___init___py.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/z_4e9cd68b6a9c9d10_encoding_py.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/z_4e9cd68b6a9c9d10_pipeline_py.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/z_4e9cd68b6a9c9d10_scaling_py.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/z_6005cbd7e229a64c___init___py.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../htmlcov/z_8451bac5f9197a7e_csv_loader_py.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../preprocess/Cleaning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../preprocess/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../preprocess/encoding.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../preprocess/pipeline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../preprocess/scaling.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pyproject.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../setup.py" beforeDir="false" />
+    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Datastream reload">
+      <changelist_data name="Darkstalker" email="allanw.mk@gmail.com" automatic="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/Tests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Generators/Dense_Data_Generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Generators/General_Data_Features.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Generators/Sparse_Data_Generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Generators/Tokenizing_Text_Data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Generators/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Performance metrics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/python-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-publish.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_28_2024_7_40_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +49,7 @@
     </excluded-from-favorite>
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Darkstalker &lt;allanw.mk@gmail.com&gt;" />
         <option value="Allan &lt;allanw.mk@gmail.com&gt;" />
         <option value="Allan" />
       </list>
@@ -102,7 +60,7 @@
         <entry key="$PROJECT_DIR$/.." value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
@@ -211,41 +169,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;NIXITCH_NIXPKGS_CONFIG&quot;: &quot;&quot;,
-    &quot;NIXITCH_NIX_CONF_DIR&quot;: &quot;&quot;,
-    &quot;NIXITCH_NIX_OTHER_STORES&quot;: &quot;&quot;,
-    &quot;NIXITCH_NIX_PATH&quot;: &quot;&quot;,
-    &quot;NIXITCH_NIX_PROFILES&quot;: &quot;&quot;,
-    &quot;NIXITCH_NIX_REMOTE&quot;: &quot;&quot;,
-    &quot;NIXITCH_NIX_USER_PROFILE_DIR&quot;: &quot;&quot;,
-    &quot;Python tests.Python tests for Test_Pipeline.TestPipeline.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Test_data_loader.TestCSVLoader.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Test_data_loader.TestEncoder.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for Test_data_loader.TestIntegration.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in Test_data_loader.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Basic_Pipeline.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Pipeline.executor&quot;: &quot;Run&quot;,
-    &quot;Python.encoding.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/kunya/PycharmProjects/DataStream&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;writerside.last.selected.productDataFlux&quot;: &quot;gs&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "NIXITCH_NIXPKGS_CONFIG": "",
+    "NIXITCH_NIX_CONF_DIR": "",
+    "NIXITCH_NIX_OTHER_STORES": "",
+    "NIXITCH_NIX_PATH": "",
+    "NIXITCH_NIX_PROFILES": "",
+    "NIXITCH_NIX_REMOTE": "",
+    "NIXITCH_NIX_USER_PROFILE_DIR": "",
+    "Python tests.Python tests for Test_Pipeline.TestPipeline.executor": "Run",
+    "Python tests.Python tests for Test_data_loader.TestCSVLoader.executor": "Run",
+    "Python tests.Python tests for Test_data_loader.TestEncoder.executor": "Run",
+    "Python tests.Python tests for Test_data_loader.TestIntegration.executor": "Run",
+    "Python tests.Python tests in Test_data_loader.py.executor": "Run",
+    "Python.Basic_Pipeline.executor": "Run",
+    "Python.Dense_Data_Generator.executor": "Run",
+    "Python.General_Data_Features.executor": "Run",
+    "Python.Performance metrics.executor": "Run",
+    "Python.Pipeline.executor": "Run",
+    "Python.Sparse_Data_Generator.executor": "Run",
+    "Python.Tokenizing_Text_Data.executor": "Run",
+    "Python.encoding.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/kunya/PycharmProjects/DataStream",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "writerside.last.selected.productDataFlux": "gs"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
-}</component>
-  <component name="RunManager" selected="Python tests.Python tests for Test_data_loader.TestIntegration">
-    <configuration name="Basic_Pipeline" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Python.Performance metrics">
+    <configuration name="Dense_Data_Generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,12 +217,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data Generators" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Example/Basic_Pipeline.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data Generators/Dense_Data_Generator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -268,77 +231,105 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Test_Pipeline.TestPipeline" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="General_Data_Features" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data Generators" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Test_Pipeline.TestPipeline&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data Generators/General_Data_Features.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Test_data_loader.TestEncoder" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Performance metrics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Test_data_loader.TestEncoder&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Performance metrics.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Test_data_loader.TestIntegration" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Sparse_Data_Generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data Generators" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Test_data_loader.TestIntegration&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data Generators/Sparse_Data_Generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in Test_data_loader.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Tokenizing_Text_Data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data Generators" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Tests/Test_data_loader.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data Generators/Tokenizing_Text_Data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for Test_data_loader.TestIntegration" />
-        <item itemvalue="Python tests.Python tests in Test_data_loader.py" />
-        <item itemvalue="Python tests.Python tests for Test_Pipeline.TestPipeline" />
-        <item itemvalue="Python tests.Python tests for Test_data_loader.TestEncoder" />
-        <item itemvalue="Python.Basic_Pipeline" />
+        <item itemvalue="Python.Performance metrics" />
+        <item itemvalue="Python.General_Data_Features" />
+        <item itemvalue="Python.Sparse_Data_Generator" />
+        <item itemvalue="Python.Dense_Data_Generator" />
+        <item itemvalue="Python.Tokenizing_Text_Data" />
       </list>
     </recent_temporary>
   </component>
@@ -373,6 +364,9 @@
       <workItem from="1735433288106" duration="528000" />
       <workItem from="1735438944070" duration="3154000" />
       <workItem from="1735492525493" duration="2858000" />
+      <workItem from="1735495559175" duration="1235000" />
+      <workItem from="1735528604382" duration="48000" />
+      <workItem from="1735528679603" duration="3218000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: Add DataStream project with modular toolkit for data engineering pipelines">
       <option name="closed" value="true" />
@@ -462,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735494604865</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Datastream reload">
+      <option name="closed" value="true" />
+      <created>1735495877752</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735495877752</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +475,8 @@
     <MESSAGE value="flake8.INI" />
     <MESSAGE value="Pipeline  fix" />
     <MESSAGE value="Pipeline fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pipeline fix" />
+    <MESSAGE value="Datastream reload" />
+    <option name="LAST_COMMIT_MESSAGE" value="Datastream reload" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -487,11 +490,20 @@
       </default-breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DataFlux$Pipeline.coverage" NAME="Pipeline Coverage Results" MODIFIED="1735408747186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataStream$Sparse_Data_Generator.coverage" NAME="Sparse_Data_Generator Coverage Results" MODIFIED="1735530067975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Generators" />
     <SUITE FILE_PATH="coverage/DataFlux$Basic_Pipeline.coverage" NAME="Basic_Pipeline Coverage Results" MODIFIED="1735420538827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example" />
+    <SUITE FILE_PATH="coverage/DataStream$Tokenizing_Text_Data.coverage" NAME="Tokenizing_Text_Data Coverage Results" MODIFIED="1735530042274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Generators" />
     <SUITE FILE_PATH="coverage/DataStream$.coverage" NAME=" Coverage Results" MODIFIED="1735443166386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
     <SUITE FILE_PATH="coverage/DataFlux$.coverage" NAME=" Coverage Results" MODIFIED="1735423146256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
+    <SUITE FILE_PATH="coverage/DataStream$General_Data_Features.coverage" NAME="General_Data_Features Coverage Results" MODIFIED="1735530077530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Generators" />
     <SUITE FILE_PATH="coverage/DataFlux$encoding.coverage" NAME="encoding Coverage Results" MODIFIED="1735416341052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess" />
+    <SUITE FILE_PATH="coverage/DataStream$Dense_Data_Generator.coverage" NAME="Dense_Data_Generator Coverage Results" MODIFIED="1735530061705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Generators" />
+    <SUITE FILE_PATH="coverage/DataStream$Performance_metrics.coverage" NAME="Performance metrics Coverage Results" MODIFIED="1735531540796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
