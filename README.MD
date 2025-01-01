@@ -128,7 +128,7 @@ exporter.save(trained_model, "models/random_forest.pkl")
 
 ---
 
-## Why Use DataFlux?
+## Why Use DataSteam?
 ### In the Data Engineering Ecosystem:
 DataFlux addresses key challenges in the modern data engineering landscape:
 1. **Reusability**: Standardize and modularize workflows to prevent redundant code.
@@ -137,7 +137,7 @@ DataFlux addresses key challenges in the modern data engineering landscape:
 4. **Scalability**: Easily adapted to different data sources and project scales.
 
 ### Example Use Case:
-In a machine learning workflow, DataFlux can:
+In a machine learning workflow, DataStream can:
 - Load large datasets from cloud storage.
 - Clean and preprocess them for feature selection.
 - Automate model training and hyperparameter tuning.
@@ -154,7 +154,7 @@ Contributions are welcome! To contribute:
 ---
 
 ## License
-DataFlux is licensed under the MIT License. See `LICENSE` for details.
+DataStream is licensed under the MIT License. See `LICENSE` for details.
 
 ---
 
@@ -163,4 +163,4 @@ For questions, issues, or feature requests, please open a GitHub issue or contac
 
 ---
 
-### Happy Streamlining with DataFlux!
+### Happy Streamlining with DataStream
