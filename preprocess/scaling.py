@@ -1,34 +1,65 @@
-from sklearn.preprocessing import MinMaxScaler, StandardScaler
 import pandas as pd
+import numpy as np
+from concurrent.futures import ThreadPoolExecutor
+from typing import Dict
+import logging
+from numba import jit
+import psutil
+
+logger = logging.getLogger (__name__)
 
 
 class Scaler:
-    def __init__(self, method='minmax'):
+    """Memory-efficient parallel data scaler"""
+
+    def __init__(self, method: str = 'minmax'):
         self.method = method
-        self.scalers = {}
+        self.num_workers = 7
+        self.scalers: Dict = {}
 
-    def transform(self, data):
+    @staticmethod
+    @jit (nopython=True)
+    def _minmax_scale_numba(arr: np.ndarray) -> np.ndarray:
+        """JIT-compiled MinMax scaling"""
+        min_val = np.min (arr)
+        max_val = np.max (arr)
+        if max_val > min_val:
+            return (arr - min_val) / (max_val - min_val)
+        return arr
+
+    @staticmethod
+    @jit (nopython=True)
+    def _standard_scale_numba(arr: np.ndarray) -> np.ndarray:
+        """JIT-compiled Standard scaling"""
+        mean = np.mean (arr)
+        std = np.std (arr)
+        if std > 0:
+            return (arr - mean) / std
+        return arr - mean
+
+    def _scale_column(self, data: pd.Series) -> pd.Series:
+        """Scale a single column"""
+        if self.method == 'minmax':
+            scaled_values = self._minmax_scale_numba (data.values)
+        else:
+            scaled_values = self._standard_scale_numba (data.values)
+        return pd.Series (scaled_values, index=data.index, name=data.name)
+
+    def transform(self, data: pd.DataFrame) -> pd.DataFrame:
+        """Transform data with parallel scaling"""
         result = data.copy ()
+        numeric_cols = result.select_dtypes (include=['int64', 'float64']).columns
 
-        # Select only numeric columns
-        numeric_columns = data.select_dtypes (include=['int64', 'float64']).columns
+        if len (numeric_cols) > 0:
+            # Process columns in parallel
+            with ThreadPoolExecutor (max_workers=self.num_workers) as executor:
+                scaled_cols = list (executor.map (
+                    lambda col: self._scale_column (result [col]),
+                    numeric_cols
+                ))
 
-        if len (numeric_columns) == 0:
-            return result
+                for col, scaled_data in zip (numeric_cols, scaled_cols):
+                    result [col] = scaled_data
 
-        for column in numeric_columns:
-            if column not in self.scalers:
-                if self.method == 'minmax':
-                    self.scalers [column] = MinMaxScaler ()
-                elif self.method == 'standard':
-                    self.scalers [column] = StandardScaler ()
-
-                # Reshape for scaling
-                values = result [column].values.reshape (-1, 1)
-                self.scalers [column].fit (values)
-
-            # Transform the column
-            values = result [column].values.reshape (-1, 1)
-            result [column] = self.scalers [column].transform (values)
-
+        logger.info (f"Scaled {len (numeric_cols)} numeric columns")
         return result

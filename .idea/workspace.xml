@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="YAML File for build">
+    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Pipeline fix">
+      <change afterPath="$PROJECT_DIR$/EDA/EDA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDA/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EDA/dimensionality.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/Example_EDA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/Example_PCA_SVD.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_28_2024_7_40_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Basic_Pipeline_Performance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Basic_Pipeline_Performance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +157,10 @@
       </map>
     </option>
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -177,6 +188,8 @@
     "Python.Basic_Pipeline_Performance.executor": "Run",
     "Python.Data_Gen_Performance.executor": "Run",
     "Python.Dense_Data_Generator.executor": "Run",
+    "Python.Example_EDA.executor": "Run",
+    "Python.Example_PCA_SVD.executor": "Run",
     "Python.General_Data_Features.executor": "Run",
     "Python.Loaders_Performance.executor": "Run",
     "Python.Performance metrics.executor": "Run",
@@ -193,14 +206,14 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "writerside.last.selected.productDataFlux": "gs"
   },
   "keyToStringList": {
     "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Loaders_Performance">
+  <component name="RunManager" selected="Python.Basic_Pipeline_Performance">
     <configuration name="Basic_Pipeline_Performance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
@@ -247,6 +260,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Example_EDA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataStream" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Example" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Example/Example_EDA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Example_PCA_SVD" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataStream" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Example" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Example/Example_PCA_SVD.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Loaders_Performance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
@@ -270,52 +329,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Performance metrics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DataStream" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Performance metrics.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for Performance metrics.test_basic_pipeline" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="DataStream" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Performance metrics.test_basic_pipeline&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Loaders_Performance" />
         <item itemvalue="Python.Basic_Pipeline_Performance" />
+        <item itemvalue="Python.Example_PCA_SVD" />
+        <item itemvalue="Python.Example_EDA" />
+        <item itemvalue="Python.Loaders_Performance" />
         <item itemvalue="Python.Data_Gen_Performance" />
-        <item itemvalue="Python.Performance metrics" />
-        <item itemvalue="Python tests.Python tests for Performance metrics.test_basic_pipeline" />
       </list>
     </recent_temporary>
   </component>
@@ -354,6 +374,8 @@
       <workItem from="1735528604382" duration="48000" />
       <workItem from="1735528679603" duration="3710000" />
       <workItem from="1735578266387" duration="8066000" />
+      <workItem from="1735587478485" duration="3350000" />
+      <workItem from="1735750127446" duration="4926000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit: Add DataStream project with modular toolkit for data engineering pipelines">
       <option name="closed" value="true" />
@@ -475,7 +497,39 @@
       <option name="project" value="LOCAL" />
       <updated>1735587297609</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="YAML File for build">
+      <option name="closed" value="true" />
+      <created>1735587853932</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1735587853932</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Pipeline fix">
+      <option name="closed" value="true" />
+      <created>1735588653266</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1735588653266</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Pipeline fix">
+      <option name="closed" value="true" />
+      <created>1735589102972</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1735589102972</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Pipeline fix">
+      <option name="closed" value="true" />
+      <created>1735589615156</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1735589615156</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,11 +539,11 @@
     <MESSAGE value="Initial commit: Add DataStream project with modular toolkit for data engineering pipelines" />
     <MESSAGE value="flake8.INI" />
     <MESSAGE value="Pipeline  fix" />
-    <MESSAGE value="Pipeline fix" />
     <MESSAGE value="Datastream reload" />
     <MESSAGE value="Yaml File for build" />
     <MESSAGE value="YAML File for build" />
-    <option name="LAST_COMMIT_MESSAGE" value="YAML File for build" />
+    <MESSAGE value="Pipeline fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pipeline fix" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -512,13 +566,15 @@
     <SUITE FILE_PATH="coverage/DataFlux$Basic_Pipeline.coverage" NAME="Basic_Pipeline Coverage Results" MODIFIED="1735420538827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example" />
     <SUITE FILE_PATH="coverage/DataFlux$encoding.coverage" NAME="encoding Coverage Results" MODIFIED="1735416341052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess" />
     <SUITE FILE_PATH="coverage/DataStream$Dense_Data_Generator.coverage" NAME="Dense_Data_Generator Coverage Results" MODIFIED="1735530061705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Generators" />
+    <SUITE FILE_PATH="coverage/DataStream$Example_EDA.coverage" NAME="Example_EDA Coverage Results" MODIFIED="1735754115658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example" />
     <SUITE FILE_PATH="coverage/DataStream$Sparse_Data_Generator.coverage" NAME="Sparse_Data_Generator Coverage Results" MODIFIED="1735530067975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Generators" />
     <SUITE FILE_PATH="coverage/DataStream$Data_Gen_Performance.coverage" NAME="Data_Gen_Performance Coverage Results" MODIFIED="1735585048773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data_Generators" />
-    <SUITE FILE_PATH="coverage/DataStream$Basic_Pipeline_Performance.coverage" NAME="Basic_Pipeline_Performance Coverage Results" MODIFIED="1735585703921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example" />
+    <SUITE FILE_PATH="coverage/DataStream$Basic_Pipeline_Performance.coverage" NAME="Basic_Pipeline_Performance Coverage Results" MODIFIED="1735755166682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example" />
     <SUITE FILE_PATH="coverage/DataStream$Tokenizing_Text_Data.coverage" NAME="Tokenizing_Text_Data Coverage Results" MODIFIED="1735530042274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Generators" />
     <SUITE FILE_PATH="coverage/DataStream$.coverage" NAME=" Coverage Results" MODIFIED="1735579427035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DataFlux$.coverage" NAME=" Coverage Results" MODIFIED="1735423146256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Tests" />
     <SUITE FILE_PATH="coverage/DataStream$General_Data_Features.coverage" NAME="General_Data_Features Coverage Results" MODIFIED="1735530077530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data Generators" />
+    <SUITE FILE_PATH="coverage/DataStream$Example_PCA_SVD.coverage" NAME="Example_PCA_SVD Coverage Results" MODIFIED="1735754693692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Example" />
     <SUITE FILE_PATH="coverage/DataStream$Loaders_Performance.coverage" NAME="Loaders_Performance Coverage Results" MODIFIED="1735586010179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Loaders" />
     <SUITE FILE_PATH="coverage/DataStream$Performance_metrics.coverage" NAME="Performance metrics Coverage Results" MODIFIED="1735584589920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

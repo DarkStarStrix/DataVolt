@@ -1,26 +1,27 @@
 from Loaders.csv_loader import CSVLoader
-from preprocess.pipeline import PreprocessingPipeline
+from preprocess.Cleaning import DataCleaner
 from preprocess.scaling import Scaler
 from preprocess.encoding import Encoder
-from preprocess.Cleaning import DataCleaner
+from preprocess.pipeline import PreprocessingPipeline
 
-# Load data
-loader = CSVLoader (file_path="C:/Users/kunya/PycharmProjects/DataStream/data/customers-10000.csv")
-data = loader.load_data ()
+# Initialize components
+loader = CSVLoader("C:/Users/kunya/PycharmProjects/DataStream/data/customers-10000.csv")
+cleaner = DataCleaner(missing_value_strategy='fill')
+scaler = Scaler(method='minmax')
+encoder = Encoder(method='onehot')
 
-# Create preprocessing steps
-cleaner = DataCleaner (missing_value_strategy='fill')
-scaler = Scaler (method='minmax')
-encoder = Encoder (method='onehot')
+# Create a pipeline
+pipeline = PreprocessingPipeline([
+    cleaner,
+    scaler,
+    encoder
+])
 
-# Create and run a pipeline
-pipeline = PreprocessingPipeline (steps=[cleaner, scaler, encoder])
-preprocessed_data = pipeline.process (data)
+# Process data
+data = loader.load_data()
+processed_data = pipeline.process(data)
 
-# Verify results
-print ("Original shape:", data.shape)
-print ("Preprocessed shape:", preprocessed_data.shape)
-print ("\nColumns:", preprocessed_data.columns.tolist ())
+print(processed_data.head())
 
 
 # Example/Basic_Pipeline.py

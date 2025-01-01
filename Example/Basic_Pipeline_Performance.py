@@ -5,55 +5,64 @@ import psutil
 import matplotlib.pyplot as plt
 from Example.Basic_Pipeline import Basic_Pipeline
 
-# Create a list to store the time and memory usage
+# Create lists to store the time and memory usage
 time_list = []
 memory_list = []
 
 # Create a pipeline object
 pipeline = Basic_Pipeline ()
 
-# Run the pipeline 10 times
-for i in range (10):
-    # Start the timer
-    start_time = time.time ()
+# Number of elements to process
+num_elements = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 
-    # Run the pipeline
-    pipeline.run ()
+# Run the pipeline for different number of elements
+for elements in num_elements:
+    run_times = []
+    memory_runs = []
 
-    # End the timer
-    end_time = time.time ()
+    for _ in range (10):  # Run each configuration 10 times
+        # Clear any garbage before measuring
+        psutil.Process ().memory_info ()  # Initial call to stabilize
 
-    # Calculate the time taken
-    time_taken = end_time - start_time
+        start_time = time.time ()
+        pipeline.run ()  # Assuming the pipeline can take the number of elements
+        end_time = time.time ()
 
-    # Get the memory usage
-    memory_usage = psutil.Process ().memory_info ().rss / (1024 * 1024)  # Convert to MB
+        run_times.append (end_time - start_time)
+        memory_usage = psutil.Process ().memory_info ().rss / (1024 * 1024)  # Convert to MB
+        memory_runs.append (memory_usage)
 
-    # Append the time and memory usage to the list
-    time_list.append (time_taken)
-    memory_list.append (memory_usage)
+    # Calculate averages
+    avg_time_taken = sum (run_times) / len (run_times)
+    avg_memory_usage = sum (memory_runs) / len (memory_runs)
+
+    time_list.append (avg_time_taken)
+    memory_list.append (avg_memory_usage)
 
 
-# Plot the time and memory usage
-def plot_graph(time_list, memory_list):
+def plot_graph(num_elements, time_list, memory_list):
     plt.figure (figsize=(12, 6))
 
+    # Time plot
     plt.subplot (1, 2, 1)
-    plt.plot (time_list, marker='o', label='Time (s)')
-    plt.xlabel ('Run')
-    plt.ylabel ('Time (s)')
-    plt.title ('Time Taken for Each Run')
-    plt.legend ()
+    plt.bar (num_elements, time_list, color='blue', width=8)
+    plt.xlabel ('Number of Elements')
+    plt.ylabel ('Average Time (s)')
+    plt.title ('Average Time Taken for Each Number of Elements')
+    # Ensure y-axis starts at 0
+    plt.ylim (bottom=0)
 
+    # Memory plot
     plt.subplot (1, 2, 2)
-    plt.plot (memory_list, marker='o', label='Memory (MB)', color='orange')
-    plt.xlabel ('Run')
+    plt.bar (num_elements, memory_list, color='orange', width=8)
+    plt.xlabel ('Number of Elements')
     plt.ylabel ('Memory (MB)')
-    plt.title ('Memory Usage for Each Run')
-    plt.legend ()
+    plt.title ('Memory Usage for Each Number of Elements')
+    # Ensure y-axis starts at 0
+    plt.ylim (bottom=0)
 
     plt.tight_layout ()
     plt.show ()
 
 
-plot_graph (time_list, memory_list)
+plot_graph (num_elements, time_list, memory_list)
