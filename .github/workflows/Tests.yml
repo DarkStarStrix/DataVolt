@@ -22,7 +22,7 @@ jobs:
         pip install pytest pytest-cov
 
     - name: Run tests with coverage
-      run: pytest --cov-report xml --cov=src Tests/Test_dat_loader.py
+      run: pytest --cov-report xml --cov=src Tests/Test_data_loader.py
       continue-on-error: true
 
     - name: Upload coverage report
