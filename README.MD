@@ -7,7 +7,7 @@
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![PyPI](https://img.shields.io/badge/pypi-v0.0.1-blue)
 ![UV](https://img.shields.io/badge/uv-v0.0.1-blue)
-
+[![CI](https://github.com/DarkStarStrix/DataStream/actions/workflows/Tests.yml/badge.svg)](https://github.com/DarkStarStrix/DataStream/actions/workflows/Tests.yml)
 
 ## Overview
 **DataStream** is a modular toolkit designed to automate and streamline data engineering pipelines. It provides reusable, extensible components for data loading, preprocessing, feature engineering, and model training. With DataFlux, you can save time and effort by leveraging prebuilt tools to handle repetitive and complex data engineering tasks.

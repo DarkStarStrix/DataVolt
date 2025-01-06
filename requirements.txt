@@ -15,4 +15,3 @@ seaborn~=0.13.2
 plotly~=5.0.0
 configparser~=5.0.0
 psutil~=6.1.1
-lineno~=1.0.0

@@ -22,13 +22,13 @@ jobs:
         pip install pytest pytest-cov
 
     - name: Run tests with coverage
-      run:
-        pytest --cov-report xml --cov=src  Tests/Test_data_loader.py
+      run: pytest --cov-report xml --cov=src Tests/Test_data_loader.py
       env:
-        PYTHONPATH:
+        PYTHONPATH: ${{ github.workspace }}
 
     - name: Upload coverage report
       uses: actions/upload-artifact@v4
       with:
         name: coverage-report
         path: coverage.xml
+        
