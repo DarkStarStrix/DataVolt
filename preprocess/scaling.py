@@ -1,10 +1,11 @@
+# preprocess/scaling.py
+
 import pandas as pd
 import numpy as np
 from concurrent.futures import ThreadPoolExecutor
 from typing import Dict
 import logging
 from numba import jit
-import psutil
 
 logger = logging.getLogger (__name__)
 
@@ -12,7 +13,7 @@ logger = logging.getLogger (__name__)
 class Scaler:
     """Memory-efficient parallel data scaler"""
 
-    def __init__(self, method: str = 'minmax'):
+    def __init__(self, method: str = None):
         self.method = method
         self.num_workers = 7
         self.scalers: Dict = {}
@@ -24,8 +25,8 @@ class Scaler:
         min_val = np.min (arr)
         max_val = np.max (arr)
         if max_val > min_val:
-            return (arr - min_val) / (max_val - min_val)
-        return arr
+            return (arr - min_val) / (max_val - min_val + 1e-8)
+        return arr  # Return the original array if min_val equals max_val
 
     @staticmethod
     @jit (nopython=True)
@@ -41,8 +42,10 @@ class Scaler:
         """Scale a single column"""
         if self.method == 'minmax':
             scaled_values = self._minmax_scale_numba (data.values)
-        else:
+        elif self.method == 'standard':
             scaled_values = self._standard_scale_numba (data.values)
+        else:
+            raise ValueError (f"Unknown scaling method: {self.method}")
         return pd.Series (scaled_values, index=data.index, name=data.name)
 
     def transform(self, data: pd.DataFrame) -> pd.DataFrame:
