@@ -1,3 +1,4 @@
+import pytest
 import sys
 import os
 import unittest
@@ -8,7 +9,8 @@ from preprocess.encoding import Encoder
 from preprocess.Cleaning import DataCleaner  # Ensure the correct case for the module name
 import concurrent.futures
 
-sys.path.insert (0, os.path.abspath (os.path.join (os.path.dirname (__file__), '..')))
+# Add the parent directory of 'Loaders' to the Python path
+sys.path.insert (0, os.path.abspath (os.path.join (os.path.dirname (__file__), '..', 'src')))
 
 
 class TestIntegration (unittest.TestCase):
@@ -43,4 +45,12 @@ class TestIntegration (unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main ()
+    # Run pytest with coverage and generate an HTML report
+    pytest_args = [
+        '--cov=Loaders',
+        '--cov=preprocess',
+        '--cov-report=term-missing',
+        '--cov-report=html',
+        'Tests/'
+    ]
+    sys.exit (pytest.main (pytest_args))
