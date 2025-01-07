@@ -1,4 +1,4 @@
-# DataStream: Streamline Your Data Engineering Pipelines
+# DataVolt: Streamline Your Data Engineering Pipelines
 
 
 ![Coverage](https://img.shields.io/badge/coverage-94%25-brightgreen)
@@ -10,7 +10,7 @@
 [![CI](https://github.com/DarkStarStrix/DataStream/actions/workflows/Tests.yml/badge.svg)](https://github.com/DarkStarStrix/DataStream/actions/workflows/Tests.yml)
 
 ## Overview
-**DataStream** is a modular toolkit designed to automate and streamline data engineering pipelines. It provides reusable, extensible components for data loading, preprocessing, feature engineering, and model training. With DataFlux, you can save time and effort by leveraging prebuilt tools to handle repetitive and complex data engineering tasks.
+**DataVolt** is a modular toolkit designed to automate and streamline data engineering pipelines. It provides reusable, extensible components for data loading, preprocessing, feature engineering, and model training. With DataFlux, you can save time and effort by leveraging prebuilt tools to handle repetitive and complex data engineering tasks.
 
 
 Built for technical users, DataStream is ideal for:
@@ -33,13 +33,13 @@ Built for technical users, DataStream is ideal for:
 You can install DataStream via PyPI or UV:
 
 ```bash
-pip install datastream
+pip install datavolt
 ```
 
 Alternatively, using UV:
 
 ```bash
-uv install datastream
+uv install datavolt
 ```
 
 ---
@@ -48,7 +48,7 @@ uv install datastream
 The toolkit is organized into modular folders:
 
 ```
-DataStream/
+DataVolt/
 ├── loaders/           # Modules for data ingestion
 │   ├── csv_loader.py  # Load CSV files
 │   ├── sql_loader.py  # Load data from SQL databases
@@ -80,7 +80,7 @@ Initial commit: Add DataStream project with modular toolkit for data engineering
 Choose a loader module based on your data source:
 
 ```python
-from datastream.loaders.csv_loader import CSVLoader
+from datavolt.loaders.csv_loader import CSVLoader
 
 loader = CSVLoader(file_path="data.csv")
 data = loader.load()
@@ -90,9 +90,9 @@ data = loader.load()
 Use the preprocessing modules to clean and transform your data:
 
 ```python
-from datastream.preprocess.pipeline import PreprocessingPipeline
-from datastream.preprocess.scaling import StandardScaler
-from datastream.preprocess.encoding import OneHotEncoder
+from datavolt.preprocess.pipeline import PreprocessingPipeline
+from datavolt.preprocess.scaling import StandardScaler
+from datavolt.preprocess.encoding import OneHotEncoder
 
 pipeline = PreprocessingPipeline([
     StandardScaler(),
@@ -105,7 +105,7 @@ preprocessed_data = pipeline.run(data)
 Pass the preprocessed data into the model training module:
 
 ```python
-from datastream.model.trainer import ModelTrainer
+from datavolt.model.trainer import ModelTrainer
 
 trainer = ModelTrainer(model="random_forest", parameters={"n_estimators": 100})
 trained_model = trainer.train(preprocessed_data, labels)
@@ -115,8 +115,8 @@ trained_model = trainer.train(preprocessed_data, labels)
 Evaluate the model and save it for deployment:
 
 ```python
-from datastream.model.evaluator import Evaluator
-from datastream.model.model_export import ModelExporter
+from datavolt.model.evaluator import Evaluator
+from datavolt.model.model_export import ModelExporter
 
 evaluator = Evaluator()
 metrics = evaluator.evaluate(trained_model, test_data, test_labels)
@@ -128,9 +128,9 @@ exporter.save(trained_model, "models/random_forest.pkl")
 
 ---
 
-## Why Use DataSteam?
+## Why Use DataVolt?
 ### In the Data Engineering Ecosystem:
-DataFlux addresses key challenges in the modern data engineering landscape:
+DataVolt addresses key challenges in the modern data engineering landscape:
 1. **Reusability**: Standardize and modularize workflows to prevent redundant code.
 2. **Consistency**: Ensures uniform data transformations across projects.
 3. **Efficiency**: Reduces the time spent on routine data preprocessing and model setup tasks.
@@ -154,13 +154,13 @@ Contributions are welcome! To contribute:
 ---
 
 ## License
-DataStream is licensed under the MIT License. See `LICENSE` for details.
+DataVolt is licensed under the MIT License. See `LICENSE` for details.
 
 ---
 
 ## Support
-For questions, issues, or feature requests, please open a GitHub issue or contact us at [support@dataflux.io](mailto:support@dataflux.io).
+For questions, issues, or feature requests, please open a GitHub issue or contact me at [allanw.mk@gmail.com]).
 
 ---
 
-### Happy Streamlining with DataStream
+### Happy Streamlining with DataVolt
