@@ -14,7 +14,7 @@ setup(
     version="0.0.1",
     author="Allan",
     author_email="allanw.mk@gmail.com",
-    description="A resuable workflow for data engineering piplines",
+    description="A reusable workflow for data engineering pipelines",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/DarkStarStrix/DataVolt",
@@ -24,5 +24,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.9+',
+    python_requires='>=3.9',
 )
