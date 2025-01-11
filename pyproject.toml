@@ -1,14 +1,15 @@
+[tool.poetry]
+name = "DataVolt"
+version = "0.0.1"
+description = "A resuable workflow for data engineering pipelines"
+authors = ["Allan <allanw.mk@gmail.com>"]
+
+# Add a check for README.md
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.9+"
+
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[tool.pytest.ini_options]
-minversion = "6.0"
-addopts = ["--cov=DataFlux", "--cov-report=xml"]
-testpaths = ["Tests"]
-
-[tool.coverage.report]
-output = "coverage.xml"
-
-[tool.coverage.run]
-source = ["DataStream"]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
