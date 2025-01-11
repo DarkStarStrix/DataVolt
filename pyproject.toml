@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "DataVolt"
 version = "0.0.1"
-description = "A resuable workflow for data engineering pipelines"
+description = "A reusable workflow for data engineering pipelines"
 authors = ["Allan <allanw.mk@gmail.com>"]
 
 # Add a check for README.md
