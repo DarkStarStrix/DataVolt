@@ -50,25 +50,21 @@ The toolkit is organized into modular folders:
 ```
 DataVolt/
 ├── loaders/           # Modules for data ingestion
+    __init__
 │   ├── csv_loader.py  # Load CSV files
 │   ├── sql_loader.py  # Load data from SQL databases
 │   ├── s3_loader.py   # Fetch data from S3 buckets
 │   └── custom_loader.py # Base class for custom loaders
 ├── preprocess/        # Preprocessing modules
+    __init__ 
 │   ├── cleaning.py    # Data cleaning utilities
 │   ├── encoding.py    # Encoding categorical variables
 │   ├── scaling.py     # Data scaling and normalization
 │   ├── feature_engineering.py # Feature engineering tools
 │   └── pipeline.py    # Orchestrates preprocessing steps
-├── model/             # Model lifecycle management
-│   ├── trainer.py     # Automates model training
-│   ├── evaluator.py   # Evaluates model performance
-│   ├── hyperparameter.py # Hyperparameter optimization
-│   └── model_export.py # Export trained models
 ├── ext/               # Extensions and utilities
 │   ├── logger.py      # Logging utilities
 │   ├── custom_step.py # Hooks for custom pipeline steps
-│   └── neptune_integration.py # Logs experiments using Neptune.ai
 └── README.md          # Project documentation
 ```
 
