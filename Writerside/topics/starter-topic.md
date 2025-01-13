@@ -27,4 +27,4 @@ pipeline = PreprocessingPipeline([
 preprocessed_data = pipeline.process(data)
 ```
 
-This will guide users on how to install and use your `DataFlux` library.
+This will guide users on how to install and use your `DataVolt` library.
