@@ -1,7 +1,7 @@
 import time
 import psutil
 import matplotlib.pyplot as plt
-from Example.Basic_Pipeline import Basic_Pipeline
+from Examples.Basic_Pipeline import Basic_Pipeline
 from EDA.dimensionality import perform_pca, perform_svd
 import numpy as np
 

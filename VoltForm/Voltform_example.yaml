@@ -1,0 +1,54 @@
+# voltform_example.yaml
+infrastructure:
+  compute_cluster:
+    type: aws_ec2
+    cluster_name: financial-etl-cluster
+    region: us-east-1
+    instance_type: m5.large
+    node_count: 3
+    auto_scaling: True
+    scaling_limits:
+      min_nodes: 2
+      max_nodes: 5
+
+  storage:
+    data_lake:
+      name: "financial_data_lake"
+      provider: "aws_s3"
+      region: "us-east-1"
+      bucket_name: "financial-data-etl-bucket"
+      encryption: "AES256"
+      versioning: true
+      lifecycle_rules:
+        - transition_to_glacier: 30  # Days before moving to Glacier
+        - delete_after: 365  # Days before deletion
+
+  etl_pipeline:
+    name: "financial_etl_pipeline"
+    source: "s3://financial-data-etl-bucket/raw"
+    transformations:
+      - type: "filter"
+        condition: "transaction_amount > 1000"
+      - type: "aggregate"
+        field: "transaction_type"
+        function: "sum"
+      - type: "normalize"
+        field: "currency"
+        method: "USD_conversion"
+    destination:
+      type: "data_warehouse"
+      provider: "snowflake"
+      schema: "finance"
+      table: "transactions_summary"
+      credentials_secret: "snowflake_creds"
+
+monitoring:
+  enabled: true
+  logs:
+    provider: "cloudwatch"
+    retention: 7  # Days to retain logs
+  alerts:
+    - event: "ETL_FAILURE"
+      action: "send_email"
+      recipients:
+        - "admin@company.com"

@@ -5,16 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Pipeline fix">
-      <change afterPath="$PROJECT_DIR$/EDA/EDA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDA/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EDA/dimensionality.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Example/Example_EDA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Example/Example_PCA_SVD.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETL/CSVETL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ETL/ETL_pipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoltForm/Main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoltForm/Validator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoltForm/Voltform_example.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoltForm/engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VoltForm/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/Config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/Example/Basic_Pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/Example/Basic_Pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/Loaders/csv_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/Loaders/csv_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/Tests/Test_Pipeline.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/Tests/Test_data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/Tests/Test_data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/Writerside/images/completion_procedure.png" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/Writerside/images/completion_procedure.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/Writerside/images/completion_procedure_dark.png" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/Writerside/images/completion_procedure_dark.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/Writerside/images/convert_table_to_xml.png" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/Writerside/images/convert_table_to_xml.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/Writerside/images/convert_table_to_xml_dark.png" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/Writerside/images/convert_table_to_xml_dark.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/Writerside/images/new_topic_options.png" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/Writerside/images/new_topic_options.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/Writerside/images/new_topic_options_dark.png" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/Writerside/images/new_topic_options_dark.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/preprocess/Cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/preprocess/Cleaning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/preprocess/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/preprocess/pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/preprocess/scaling.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/preprocess/scaling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataStream/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DataStream/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DataStream.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataStream.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_28_2024_7_40_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Example/Basic_Pipeline_Performance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Basic_Pipeline_Performance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,10 +178,10 @@
       </map>
     </option>
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -192,6 +213,7 @@
     "Python.Example_PCA_SVD.executor": "Run",
     "Python.General_Data_Features.executor": "Run",
     "Python.Loaders_Performance.executor": "Run",
+    "Python.Main.executor": "Run",
     "Python.Performance metrics.executor": "Run",
     "Python.Pipeline.executor": "Run",
     "Python.Sparse_Data_Generator.executor": "Run",
@@ -206,14 +228,14 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "writerside.last.selected.productDataFlux": "gs"
   },
   "keyToStringList": {
     "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Basic_Pipeline_Performance">
+  <component name="RunManager" selected="Python.Main">
     <configuration name="Basic_Pipeline_Performance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
@@ -229,29 +251,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Example/Basic_Pipeline_Performance.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Data_Gen_Performance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DataStream" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data_Generators" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_Generators/Data_Gen_Performance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -329,21 +328,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataStream" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/VoltForm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VoltForm/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Main" />
         <item itemvalue="Python.Basic_Pipeline_Performance" />
         <item itemvalue="Python.Example_PCA_SVD" />
         <item itemvalue="Python.Example_EDA" />
         <item itemvalue="Python.Loaders_Performance" />
-        <item itemvalue="Python.Data_Gen_Performance" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
-        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
       </set>
     </attachedChunks>
   </component>
