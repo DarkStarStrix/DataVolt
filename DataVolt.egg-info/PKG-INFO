@@ -1,28 +1,26 @@
-Metadata-Version: 2.1
-Name: datastream
+Metadata-Version: 2.2
+Name: DataVolt
 Version: 0.0.1
-Summary: A modular toolkit for data engineering pipelines
-Home-page: https://github.com/yourusername/dataflux
+Summary: A reusable workflow for data engineering pipelines
+Home-page: https://github.com/DarkStarStrix/DataVolt
 Author: Allan
-Author-email: allaw.mk@gmail.com
-Classifier: Programming Language :: Python :: 3.9+
+Author-email: allanw.mk@gmail.com
+Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.9
 Description-Content-Type: text/markdown
 License-File: LICENSE.md
-Requires-Dist: pandas>=1.3.0
-Requires-Dist: numpy==1.22.0
-Requires-Dist: scikit-learn==1.5.0
-Requires-Dist: neptune-client>=0.9.0
-Requires-Dist: torch==2.5.0
-Requires-Dist: setuptools>=70.0.0
-Requires-Dist: pillow~=11.0.0
-Requires-Dist: joblib~=1.4.2
-Requires-Dist: boto3~=1.35.88
-Requires-Dist: sqlalchemy~=1.4.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
 
-# DataStream: Streamline Your Data Engineering Pipelines
+# DataVolt: Streamline Your Data Engineering Pipelines
 
 
 ![Coverage](https://img.shields.io/badge/coverage-94%25-brightgreen)
@@ -31,10 +29,10 @@ Requires-Dist: sqlalchemy~=1.4.0
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![PyPI](https://img.shields.io/badge/pypi-v0.0.1-blue)
 ![UV](https://img.shields.io/badge/uv-v0.0.1-blue)
-
+[![CI](https://github.com/DarkStarStrix/DataStream/actions/workflows/Tests.yml/badge.svg)](https://github.com/DarkStarStrix/DataStream/actions/workflows/Tests.yml)
 
 ## Overview
-**DataStream** is a modular toolkit designed to automate and streamline data engineering pipelines. It provides reusable, extensible components for data loading, preprocessing, feature engineering, and model training. With DataFlux, you can save time and effort by leveraging prebuilt tools to handle repetitive and complex data engineering tasks.
+**DataVolt** is a modular toolkit designed to automate and streamline data engineering pipelines. It provides reusable, extensible components for data loading, preprocessing, feature engineering, and model training. With DataFlux, you can save time and effort by leveraging prebuilt tools to handle repetitive and complex data engineering tasks.
 
 
 Built for technical users, DataStream is ideal for:
@@ -57,13 +55,13 @@ Built for technical users, DataStream is ideal for:
 You can install DataStream via PyPI or UV:
 
 ```bash
-pip install datastream
+pip install datavolt
 ```
 
 Alternatively, using UV:
 
 ```bash
-uv install datastream
+uv install datavolt
 ```
 
 ---
@@ -72,27 +70,23 @@ uv install datastream
 The toolkit is organized into modular folders:
 
 ```
-DataStream/
+DataVolt/
 â”œâ”€â”€ loaders/           # Modules for data ingestion
+    __init__
 â”‚   â”œâ”€â”€ csv_loader.py  # Load CSV files
 â”‚   â”œâ”€â”€ sql_loader.py  # Load data from SQL databases
 â”‚   â”œâ”€â”€ s3_loader.py   # Fetch data from S3 buckets
 â”‚   â””â”€â”€ custom_loader.py # Base class for custom loaders
 â”œâ”€â”€ preprocess/        # Preprocessing modules
+    __init__ 
 â”‚   â”œâ”€â”€ cleaning.py    # Data cleaning utilities
 â”‚   â”œâ”€â”€ encoding.py    # Encoding categorical variables
 â”‚   â”œâ”€â”€ scaling.py     # Data scaling and normalization
 â”‚   â”œâ”€â”€ feature_engineering.py # Feature engineering tools
 â”‚   â””â”€â”€ pipeline.py    # Orchestrates preprocessing steps
-â”œâ”€â”€ model/             # Model lifecycle management
-â”‚   â”œâ”€â”€ trainer.py     # Automates model training
-â”‚   â”œâ”€â”€ evaluator.py   # Evaluates model performance
-â”‚   â”œâ”€â”€ hyperparameter.py # Hyperparameter optimization
-â”‚   â””â”€â”€ model_export.py # Export trained models
 â”œâ”€â”€ ext/               # Extensions and utilities
 â”‚   â”œâ”€â”€ logger.py      # Logging utilities
 â”‚   â”œâ”€â”€ custom_step.py # Hooks for custom pipeline steps
-â”‚   â””â”€â”€ neptune_integration.py # Logs experiments using Neptune.ai
 â””â”€â”€ README.md          # Project documentation
 ```
 
@@ -104,7 +98,7 @@ Initial commit: Add DataStream project with modular toolkit for data engineering
 Choose a loader module based on your data source:
 
 ```python
-from datastream.loaders.csv_loader import CSVLoader
+from datavolt.loaders.csv_loader import CSVLoader
 
 loader = CSVLoader(file_path="data.csv")
 data = loader.load()
@@ -114,9 +108,9 @@ data = loader.load()
 Use the preprocessing modules to clean and transform your data:
 
 ```python
-from datastream.preprocess.pipeline import PreprocessingPipeline
-from datastream.preprocess.scaling import StandardScaler
-from datastream.preprocess.encoding import OneHotEncoder
+from datavolt.preprocess.pipeline import PreprocessingPipeline
+from datavolt.preprocess.scaling import StandardScaler
+from datavolt.preprocess.encoding import OneHotEncoder
 
 pipeline = PreprocessingPipeline([
     StandardScaler(),
@@ -129,7 +123,7 @@ preprocessed_data = pipeline.run(data)
 Pass the preprocessed data into the model training module:
 
 ```python
-from datastream.model.trainer import ModelTrainer
+from datavolt.model.trainer import ModelTrainer
 
 trainer = ModelTrainer(model="random_forest", parameters={"n_estimators": 100})
 trained_model = trainer.train(preprocessed_data, labels)
@@ -139,8 +133,8 @@ trained_model = trainer.train(preprocessed_data, labels)
 Evaluate the model and save it for deployment:
 
 ```python
-from datastream.model.evaluator import Evaluator
-from datastream.model.model_export import ModelExporter
+from datavolt.model.evaluator import Evaluator
+from datavolt.model.model_export import ModelExporter
 
 evaluator = Evaluator()
 metrics = evaluator.evaluate(trained_model, test_data, test_labels)
@@ -152,16 +146,16 @@ exporter.save(trained_model, "models/random_forest.pkl")
 
 ---
 
-## Why Use DataFlux?
+## Why Use DataVolt?
 ### In the Data Engineering Ecosystem:
-DataFlux addresses key challenges in the modern data engineering landscape:
+DataVolt addresses key challenges in the modern data engineering landscape:
 1. **Reusability**: Standardize and modularize workflows to prevent redundant code.
 2. **Consistency**: Ensures uniform data transformations across projects.
 3. **Efficiency**: Reduces the time spent on routine data preprocessing and model setup tasks.
 4. **Scalability**: Easily adapted to different data sources and project scales.
 
 ### Example Use Case:
-In a machine learning workflow, DataFlux can:
+In a machine learning workflow, DataStream can:
 - Load large datasets from cloud storage.
 - Clean and preprocess them for feature selection.
 - Automate model training and hyperparameter tuning.
@@ -178,13 +172,13 @@ Contributions are welcome! To contribute:
 ---
 
 ## License
-DataFlux is licensed under the MIT License. See `LICENSE` for details.
+DataVolt is licensed under the MIT License. See `LICENSE` for details.
 
 ---
 
 ## Support
-For questions, issues, or feature requests, please open a GitHub issue or contact us at [support@dataflux.io](mailto:support@dataflux.io).
+For questions, issues, or feature requests, please open a GitHub issue or contact me at [allanw.mk@gmail.com]).
 
 ---
 
-### Happy Streamlining with DataFlux!
+### Happy Streamlining with DataVolt

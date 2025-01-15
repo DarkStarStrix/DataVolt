@@ -1,10 +1,9 @@
-import pandas as pd
-import numpy as np
+import logging
+import os
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-import logging
-from typing import Optional, List
-import os
+
+import pandas as pd
 import psutil
 
 logger = logging.getLogger (__name__)
@@ -63,7 +62,7 @@ class CSVLoader:
                 df = pd.read_csv (self.file_path)
                 return _process_chunk (df)
 
-            chunks: List [pd.DataFrame] = []
+            # Load data in chunks
             reader = pd.read_csv (self.file_path, chunksize=chunk_size)
 
             # Process chunks in parallel

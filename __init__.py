@@ -1,10 +1,6 @@
-# __init__.py
+# __init__.py from the Loaders directory imports all the classes from the loaders module and makes them available to the outside world.
 
-# Loaders
-from Loaders.csv_loader import CSVLoader
+from Loaders import csv_loader, s3_loader, sql_loader
+from preprocess import Cleaning, encoding, scaling, pipeline
 
-# Preprocessing
-from preprocess.pipeline import PreprocessingPipeline
-from preprocess.scaling import Scaler
-from preprocess.encoding import Encoder
-from preprocess.Cleaning import DataCleaner
+__all__ = ['csv_loader', 's3_loader', 'sql_loader', 'Cleaning', 'encoding', 'scaling', 'pipeline']

@@ -6,8 +6,12 @@ readme = "README.md"
 if os.path.exists(readme):
     with open(readme, "r") as fh:
         long_description = fh.read()
+    print("README.md found and read successfully.")
+    print("Contents of README.md:")
+    print(long_description)
 else:
     long_description = ""
+    print("README.md not found.")
 
 setup(
     name="DataVolt",
@@ -24,5 +28,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.9',
+    python_requires='3.10',
 )

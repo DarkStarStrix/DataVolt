@@ -21,12 +21,12 @@ class Scaler:
     @staticmethod
     @jit (nopython=True)
     def _minmax_scale_numba(arr: np.ndarray) -> np.ndarray:
-        """JIT-compiled MinMax scaling"""
+        """JIT-compiled Min-Max scaling"""
         min_val = np.min (arr)
         max_val = np.max (arr)
         if max_val > min_val:
-            return (arr - min_val) / (max_val - min_val + 1e-8)
-        return arr  # Return the original array if min_val equals max_val
+            return (arr - min_val) / (max_val - min_val)
+        return arr - min_val
 
     @staticmethod
     @jit (nopython=True)
