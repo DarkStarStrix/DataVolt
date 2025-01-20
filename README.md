@@ -1,163 +1,138 @@
-# DataVolt: Streamline Your Data Engineering Pipelines
+# DataVolt: Enterprise Data Pipeline Framework
 
-Currently having some issues publishing standby 
+<p align="center">
+  <img src="logo.png" alt="DataVolt Logo - A lightning bolt surrounded by a circuit board pattern in a circular design" width="200"/>
+</p>
 
 ![Coverage](https://img.shields.io/badge/coverage-94%25-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Version](https://img.shields.io/badge/version-0.0.1-blue)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![PyPI](https://img.shields.io/badge/pypi-v0.0.1-blue)
-![UV](https://img.shields.io/badge/uv-v0.0.1-blue)
 [![CI](https://github.com/DarkStarStrix/DataStream/actions/workflows/Tests.yml/badge.svg)](https://github.com/DarkStarStrix/DataStream/actions/workflows/Tests.yml)
 
-## Overview
-**DataVolt** is a modular toolkit designed to automate and streamline data engineering pipelines. It provides reusable, extensible components for data loading, preprocessing, feature engineering, and model training. With DataFlux, you can save time and effort by leveraging prebuilt tools to handle repetitive and complex data engineering tasks.
+## Introduction
 
+DataVolt is an enterprise-grade framework for building and maintaining scalable data engineering pipelines. It provides a comprehensive suite of tools for data ingestion, transformation, and processing, enabling organizations to standardize their data operations and accelerate development cycles.
 
-Built for technical users, DataStream is ideal for:
-- **Data Scientists** looking to simplify their preprocessing workflows.
-- **Machine Learning Engineers** need robust pipelines for consistent data transformations.
-- **Data Engineers** aiming to optimize data ingestion and transformation pipelines.
+## Core Capabilities
 
----
+DataVolt delivers three primary value propositions:
 
-## Features
-- **Reusable Components**: Prebuilt modules for data loading, cleaning, scaling, encoding, and more.
-- **Extensibility**: Custom hooks for user-defined preprocessing and model training steps.
-- **Modular Design**: Each file serves a specific purpose, ensuring flexibility and clarity.
-- **Integration Ready**: Seamlessly integrate with cloud storage, SQL databases, or ML frameworks.
-- **Automated Pipelines**: Chain tasks together into a functional pipeline to minimize manual coding.
+1. **Pipeline Standardization**: Unified interfaces for data ingestion, transformation, and export operations
+2. **Operational Efficiency**: Automated workflow orchestration and preprocessing capabilities
+3. **Enterprise Integration**: Native support for cloud storage, SQL databases, and machine learning frameworks
 
----
+## Technical Architecture
+
+```
+DataVolt/
+├── loaders/           # Data Ingestion Layer
+│   ├── __init__.py
+│   ├── csv_loader.py  # CSV Processing Engine
+│   ├── sql_loader.py  # SQL Database Connector
+│   ├── s3_loader.py   # Cloud Storage Interface
+│   └── custom_loader.py # Extensibility Framework
+├── preprocess/        # Data Transformation Layer
+│   ├── __init__.py
+│   ├── cleaning.py    # Data Cleansing Engine
+│   ├── encoding.py    # Feature Encoding Module
+│   ├── scaling.py     # Normalization Framework
+│   ├── feature_engineering.py # Feature Generation Engine
+│   └── pipeline.py    # Pipeline Orchestrator
+└── ext/               # Extension Layer
+    ├── logger.py      # Logging Framework
+    └── custom_step.py # Custom Pipeline Interface
+```
 
 ## Installation
-You can install DataStream via PyPI or UV:
 
+Install via pip:
 ```bash
 pip install datavolt
 ```
 
-Alternatively, using UV:
-
+For improved dependency management:
 ```bash
 uv install datavolt
 ```
 
----
+## Implementation Guide
 
-## File Structure
-The toolkit is organized into modular folders:
-
-```
-DataVolt/
-├── loaders/           # Modules for data ingestion
-    __init__
-│   ├── csv_loader.py  # Load CSV files
-│   ├── sql_loader.py  # Load data from SQL databases
-│   ├── s3_loader.py   # Fetch data from S3 buckets
-│   └── custom_loader.py # Base class for custom loaders
-├── preprocess/        # Preprocessing modules
-    __init__ 
-│   ├── cleaning.py    # Data cleaning utilities
-│   ├── encoding.py    # Encoding categorical variables
-│   ├── scaling.py     # Data scaling and normalization
-│   ├── feature_engineering.py # Feature engineering tools
-│   └── pipeline.py    # Orchestrates preprocessing steps
-├── ext/               # Extensions and utilities
-│   ├── logger.py      # Logging utilities
-│   ├── custom_step.py # Hooks for custom pipeline steps
-└── README.md          # Project documentation
-```
-
----
-
-Initial commit: Add DataStream project with modular toolkit for data engineering pipelines## Quick Start Guide
-
-### Step 1: Load Your Data
-Choose a loader module based on your data source:
-
+### Data Ingestion
 ```python
 from datavolt.loaders.csv_loader import CSVLoader
 
+# Initialize data ingestion pipeline
 loader = CSVLoader(file_path="data.csv")
-data = loader.load()
+dataset = loader.load()
 ```
 
-### Step 2: Preprocess Your Data
-Use the preprocessing modules to clean and transform your data:
-
+### Data Transformation
 ```python
 from datavolt.preprocess.pipeline import PreprocessingPipeline
 from datavolt.preprocess.scaling import StandardScaler
 from datavolt.preprocess.encoding import OneHotEncoder
 
+# Configure transformation pipeline
 pipeline = PreprocessingPipeline([
     StandardScaler(),
     OneHotEncoder()
 ])
-preprocessed_data = pipeline.run(data)
+
+# Execute transformations
+processed_dataset = pipeline.run(dataset)
 ```
 
-### Step 3: Train a Model
-Pass the preprocessed data into the model training module:
-
+### Model Integration
 ```python
 from datavolt.model.trainer import ModelTrainer
-
-trainer = ModelTrainer(model="random_forest", parameters={"n_estimators": 100})
-trained_model = trainer.train(preprocessed_data, labels)
-```
-
-### Step 4: Evaluate and Export
-Evaluate the model and save it for deployment:
-
-```python
 from datavolt.model.evaluator import Evaluator
 from datavolt.model.model_export import ModelExporter
 
-evaluator = Evaluator()
-metrics = evaluator.evaluate(trained_model, test_data, test_labels)
-print(metrics)
+# Initialize model training
+trainer = ModelTrainer(
+    model="random_forest",
+    parameters={"n_estimators": 100}
+)
 
-exporter = ModelExporter()
-exporter.save(trained_model, "models/random_forest.pkl")
+# Train and evaluate
+model = trainer.train(processed_dataset, labels)
+metrics = Evaluator().evaluate(model, test_data, test_labels)
+
+# Export for production
+ModelExporter().save(model, "models/random_forest.pkl")
 ```
 
----
+## Enterprise Applications
 
-## Why Use DataVolt?
-### In the Data Engineering Ecosystem:
-DataVolt addresses key challenges in the modern data engineering landscape:
-1. **Reusability**: Standardize and modularize workflows to prevent redundant code.
-2. **Consistency**: Ensures uniform data transformations across projects.
-3. **Efficiency**: Reduces the time spent on routine data preprocessing and model setup tasks.
-4. **Scalability**: Easily adapted to different data sources and project scales.
+DataVolt is designed for organizations requiring:
 
-### Example Use Case:
-In a machine learning workflow, DataStream can:
-- Load large datasets from cloud storage.
-- Clean and preprocess them for feature selection.
-- Automate model training and hyperparameter tuning.
-- Track experiment metrics and export production-ready models.
-
----
+- Standardized data preprocessing workflows
+- Scalable machine learning pipelines
+- Reproducible feature engineering processes
+- Integration with existing data infrastructure
 
 ## Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes and submit a pull request.
 
----
+We welcome contributions from the community. Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/enhancement`)
+3. Commit changes (`git commit -am 'Add enhancement'`)
+4. Push to branch (`git push origin feature/enhancement`)
+5. Open a Pull Request
 
 ## License
-DataVolt is licensed under the MIT License. See `LICENSE` for details.
 
----
+DataVolt is distributed under the MIT License. See `LICENSE` for details.
 
 ## Support
-For questions, issues, or feature requests, please open a GitHub issue or contact me at [allanw.mk@gmail.com]).
+
+- Technical Documentation: [Documentation Portal](https://datavolt.readthedocs.io/)
+- Issue Tracking: [GitHub Issues](https://github.com/DarkStarStrix/DataVolt/issues)
+- Professional Support: Contact [allanw.mk@gmail.com](mailto:allanw.mk@gmail.com)
 
 ---
 
-### Happy Streamlining with DataVolt
+*DataVolt: Empowering Data Engineering Excellence*
