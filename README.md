@@ -1,7 +1,7 @@
 # DataVolt: Enterprise Data Pipeline Framework
 
 <p align="center">
-  <img src="logo.png" alt="DataVolt Logo" width="200"/>
+  <img src="DataVolt Logo.png" alt="DataVolt Logo" width="200"/>
 </p>
 
 ![Coverage](https://img.shields.io/badge/coverage-94%25-brightgreen)
