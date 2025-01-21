@@ -1,0 +1,9 @@
+[dependencies]
+polars = { version = "0.35", features = ["csv"] }
+rayon = "1.8"
+log = "0.4"
+sysinfo = "0.29"
+thiserror = "1.0"
+
+[dev-dependencies]
+tempfile = "3.8"

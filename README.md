@@ -13,7 +13,9 @@
 
 ## Introduction
 
-DataVolt is an enterprise-grade framework for building and maintaining scalable data engineering pipelines. It provides a comprehensive suite of tools for data ingestion, transformation, and processing, enabling organizations to standardize their data operations and accelerate development cycles.
+DataVolt is an enterprise-grade framework for building and maintaining scalable data engineering pipelines.
+It provides a comprehensive suite of tools for data ingestion, transformation, and processing,
+enabling organizations to standardize their data operations and speed up development cycles.
 
 ## Core Capabilities
 
@@ -134,5 +136,27 @@ DataVolt is distributed under the MIT License. See `LICENSE` for details.
 - Professional Support: Contact [allanw.mk@gmail.com](mailto:allanw.mk@gmail.com)
 
 ---
+
+Performance Benchmark Report
+
+
+Generated on: 2025-01-21 12:15:12
+Number of runs per loader: 3
+
+Loader: CSVLoader
+------------------------------
+Time Taken: 0.06-second
+Memory Used: 3.02 MB
+CPU Usage: 75.2%
+Throughput: 167,002 records/second
+Data Size: 10,000 records
+
+Performance Metrics:
+- Memory efficiency: 3,307.49 records/MB
+- Processing speed: 0.01 ms/record
+
+
+![loader_performance.png](Loaders/loader_performance.png)
+
 
 *DataVolt: Empowering Data Engineering Excellence*
