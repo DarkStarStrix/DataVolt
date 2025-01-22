@@ -3,6 +3,9 @@ from setuptools import setup, find_packages
 
 # Check if README.md exists
 readme = "README.md"
+print(f"Current working directory: {os.getcwd()}")
+print(f"Files in the directory: {os.listdir()}")
+
 if os.path.exists(readme):
     with open(readme, "r") as fh:
         long_description = fh.read()
