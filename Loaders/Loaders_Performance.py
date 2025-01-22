@@ -117,7 +117,7 @@ class PerformanceMonitor:
 
         df = pd.DataFrame ([vars (m) for m in self.metrics])
 
-        # Create figure with custom layout
+        # Create a figure with custom layout
         fig = plt.figure (figsize=(20, 12))
         gs = GridSpec (2, 2, figure=fig)
 
@@ -129,16 +129,16 @@ class PerformanceMonitor:
         ax1.set_facecolor (self.colors ['background'])
 
         # Bar plot for time
-        bars = ax1.bar (df ['loader_name'], df ['time_taken'],
-                        color=self.colors ['primary'], alpha=0.7)
+        ax1.bar (df ['loader_name'], df ['time_taken'],
+                 color=self.colors ['primary'], alpha=0.7)
         ax1.set_ylabel ('Time (seconds)', color=self.colors ['primary'], fontsize=12)
         ax1.tick_params (axis='y', labelcolor=self.colors ['primary'])
 
         # Line plot for memory
         ax2 = ax1.twinx ()
-        line = ax2.plot (df ['loader_name'], df ['memory_used'],
-                         color=self.colors ['secondary'],
-                         marker='o', linewidth=2, markersize=8)
+        ax2.plot (df ['loader_name'], df ['memory_used'],
+                  color=self.colors ['secondary'],
+                  marker='o', linewidth=2, markersize=8)
         ax2.set_ylabel ('Memory Usage (MB)', color=self.colors ['secondary'],
                         fontsize=12)
         ax2.tick_params (axis='y', labelcolor=self.colors ['secondary'])
@@ -255,8 +255,8 @@ class PerformanceMonitor:
 # Example usage
 if __name__ == "__main__":
     from Loaders.csv_loader import CSVLoader
-    from Loaders.sql_loader import SQLLoader
-    from Loaders.s3_loader import S3Loader
+    # from Loaders.sql_loader import SQLLoader
+    # from Loaders.s3_loader import S3Loader
 
     # Initialize loaders
     loaders = [

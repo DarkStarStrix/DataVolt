@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Retry for tests">
-      <change afterPath="$PROJECT_DIR$/Loaders/Vector_database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VoltForm/Visualize_and_provision.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
+    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Rust Bindings README.md update performance benchmarks">
+      <change afterPath="$PROJECT_DIR$/Data_Generators/Data_Generation_performance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data_Generators/data_gen_performance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Generators/Sparse_Data_Generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Generators/Sparse_Data_Generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Loaders/Loaders_Performance.py" beforeDir="false" afterPath="$PROJECT_DIR$/Loaders/Loaders_Performance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loaders/loader_performance.png" beforeDir="false" afterPath="$PROJECT_DIR$/Loaders/loader_performance.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/completion_procedure.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/completion_procedure_dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/convert_table_to_xml.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/convert_table_to_xml_dark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/new_topic_options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/images/new_topic_options_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loaders/csv_looader.rs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +191,7 @@
     "Python.Basic_Pipeline_Performance.executor": "Run",
     "Python.CSV_ETL.executor": "Run",
     "Python.Data_Gen_Performance.executor": "Run",
+    "Python.Data_Generation_performance.executor": "Run",
     "Python.Dense_Data_Generator.executor": "Run",
     "Python.Example_EDA.executor": "Run",
     "Python.Example_PCA_SVD.executor": "Run",
@@ -214,6 +208,7 @@
     "Python.setup.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/kunya/PycharmProjects/DataStream",
     "node.js.detected.package.eslint": "true",
@@ -223,10 +218,16 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
     "writerside.last.selected.productDataFlux": "gs"
+  },
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": [
+      "C:/Users/kunya/PycharmProjects/DataVolt/Writerside/topics/VoltForm-Use-docs.md",
+      "C:/Users/kunya/PycharmProjects/DataVolt/Writerside/topics/starter-topic.md"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Loaders_Performance">
-    <configuration name="CSV_ETL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Data_Generation_performance">
+    <configuration name="Data_Generation_performance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,11 +236,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ETL" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data_Generators" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ETL/CSV_ETL.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_Generators/Data_Generation_performance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -333,11 +334,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Data_Generation_performance" />
         <item itemvalue="Python.Loaders_Performance" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.Visualize_and_provision" />
         <item itemvalue="Python tests.pytest for test_etl.TestETLProcessor" />
-        <item itemvalue="Python.CSV_ETL" />
       </list>
     </recent_temporary>
   </component>
@@ -546,7 +547,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736974858193</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Rust Bindings README.md update performance benchmarks">
+      <option name="closed" value="true" />
+      <created>1737481708064</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1737481708064</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +571,8 @@
     <MESSAGE value="Pipeline fix" />
     <MESSAGE value="New Pipelines lol" />
     <MESSAGE value="Retry for tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Retry for tests" />
+    <MESSAGE value="Rust Bindings README.md update performance benchmarks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rust Bindings README.md update performance benchmarks" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
