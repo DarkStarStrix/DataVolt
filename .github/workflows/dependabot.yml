@@ -1,0 +1,21 @@
+on: push
+name:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "deps"
+    allow:
+      - dependency-type: "all"
+    ignore:
+      - dependency-name: "your-ignored-dependency"
+    labels:
+      - "dependencies"
+    reviewers:
+      - "DarkStarStrix"
+    assignees:
+      - "DarkStarStrix"
+    security-updates: true   # Ensure this is set to true
+    
