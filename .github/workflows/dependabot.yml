@@ -1,5 +1,5 @@
-on: push
-name:
+version: 2
+updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
@@ -17,5 +17,4 @@ name:
       - "DarkStarStrix"
     assignees:
       - "DarkStarStrix"
-    security-updates: true   # Ensure this is set to true
-    
+    security-updates: true
