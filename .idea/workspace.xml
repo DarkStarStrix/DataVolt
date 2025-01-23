@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Rust Bindings README.md update performance benchmarks">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="workspace.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -554,7 +552,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737569602096</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="workspace.xml">
+      <option name="closed" value="true" />
+      <created>1737574375547</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1737574375547</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +577,8 @@
     <MESSAGE value="New Pipelines lol" />
     <MESSAGE value="Retry for tests" />
     <MESSAGE value="Rust Bindings README.md update performance benchmarks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rust Bindings README.md update performance benchmarks" />
+    <MESSAGE value="workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
