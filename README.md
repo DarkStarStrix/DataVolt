@@ -86,26 +86,6 @@ pipeline = PreprocessingPipeline([
 processed_dataset = pipeline.run(dataset)
 ```
 
-### Model Integration
-```python
-from datavolt.model.trainer import ModelTrainer
-from datavolt.model.evaluator import Evaluator
-from datavolt.model.model_export import ModelExporter
-
-# Initialize model training
-trainer = ModelTrainer(
-    model="random_forest",
-    parameters={"n_estimators": 100}
-)
-
-# Train and evaluate
-model = trainer.train(processed_dataset, labels)
-metrics = Evaluator().evaluate(model, test_data, test_labels)
-
-# Export for production
-ModelExporter().save(model, "models/random_forest.pkl")
-```
-
 ## Enterprise Applications
 
 DataVolt is designed for organizations requiring:
