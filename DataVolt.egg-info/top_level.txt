@@ -2,6 +2,5 @@ Data_Generators
 EDA
 ETL
 Loaders
-Tests
 VoltForm
 preprocess

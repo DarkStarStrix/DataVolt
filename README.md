@@ -131,9 +131,9 @@ DataVolt is distributed under the MIT License. See `LICENSE` for details.
 
 ## Support
 
-- Technical Documentation: [Documentation Portal](https://datavolt.readthedocs.io/)
+- Documentation: [DataVolt Docs](Writerside/topics/starter-topic.md)
 - Issue Tracking: [GitHub Issues](https://github.com/DarkStarStrix/DataVolt/issues)
-- Professional Support: Contact [allanw.mk@gmail.com](mailto:allanw.mk@gmail.com)
+- Professional Support: Contact [allanw.mk@gmail.com](mail%20to:allanw.mk@gmail.com)
 
 ---
 

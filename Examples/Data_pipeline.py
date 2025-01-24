@@ -1,8 +1,9 @@
 import os
-import pandas as pd
+
+from tabulate import tabulate
+
 from Loaders.csv_loader import CSVLoader
 from preprocess.Cleaning import DataCleaner
-from tabulate import tabulate
 
 # Define file paths
 input_file_path = 'C:/Users/kunya/PycharmProjects/DataStream/data/customers-100.csv'

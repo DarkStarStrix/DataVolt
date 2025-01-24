@@ -11,12 +11,34 @@ jobs:
   release-build:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        python-version: [3.9, 3.10, 3.11]
+
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: ${{ matrix.python-version }}
+
+      - name: Print current directory and list files
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Files in the directory:"
+          ls -al
+
+      - name: Change permissions of README.md
+        run: |
+          chmod 644 README.md
+          ls -l README.md
+
+      - name: Verify README.md presence
+        run: |
+          if [ ! -f "README.md" ]; then
+            echo "README.md not found!"
+            exit 1
+          fi
 
       - name: Build release distributions
         run: |

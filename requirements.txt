@@ -84,3 +84,4 @@ websocket-client~=1.8.0
 kiwisolver~=1.4.8
 tomli~=2.2.1
 jsonschema~=4.23.0
+treelib~=1.7.0
