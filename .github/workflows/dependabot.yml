@@ -1,16 +1,15 @@
-on: [push]
+name: "Dependabot"
+on:
+  schedule:
+    - cron: "0 0 * * 1" # Run once a week at midnight on Monday
 jobs:
-  dependabot:
+  update_dependencies:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Dependabot
-        uses: dependabot/dependabot-core@0.133.0
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Update dependencies
+        uses: dependabot/dependabot-core@latest # Use the latest version
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          directory: "/"
-          update_schedule: "weekly"
-          package_manager: "pip"
-          commit_message: "Bump pip dependencies"
-          commit_author_email: " allanw.mk@gmail.com"
-
+          directory: "/" # Location of the repository
+          package-manager: "bundler
