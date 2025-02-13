@@ -1,5 +1,3 @@
-# dimensionality_reduction.py
-
 from sklearn.decomposition import PCA
 from sklearn.decomposition import TruncatedSVD
 

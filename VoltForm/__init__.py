@@ -1,5 +1,3 @@
-# VoltForm/__init__.py
-
 from .base import Plugin
 from .Main import Main
 from .Monitoring import MonitoringPlugin

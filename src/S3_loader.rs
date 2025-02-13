@@ -6,7 +6,6 @@ use std::error::Error;
 
 #[derive(Debug, Deserialize)]
 struct Record {
-    // Define your record fields here
     id: i32,
     value: String,
 }

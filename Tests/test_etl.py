@@ -1,4 +1,3 @@
-# Tests/test_etl.py
 import unittest
 from ETL.ETL_pipeline import ETLBase
 

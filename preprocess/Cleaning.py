@@ -22,8 +22,8 @@ class DataCleaner:
     def __init__(self, missing_value_strategy: str = 'fill'):
         self.strategy = missing_value_strategy
         self.fill_values: Dict = {}
-        self.num_workers = 7  # Using 7 cores
-        self.chunk_size = int (psutil.virtual_memory ().available * 0.1)  # Use 10% of available memory
+        self.num_workers = 7
+        self.chunk_size = int (psutil.virtual_memory ().available * 0.1)
 
     @staticmethod
     @jit (nopython=True)
@@ -46,11 +46,9 @@ class DataCleaner:
         """Transform data with parallel processing and memory efficiency"""
         result = data.copy ()
 
-        # Split columns by type
         numeric_cols = result.select_dtypes (include=['int64', 'float64']).columns
         categorical_cols = result.select_dtypes (include=['object', 'category']).columns
 
-        # Process numeric columns in parallel
         if len (numeric_cols) > 0:
             with ThreadPoolExecutor (max_workers=self.num_workers) as executor:
                 numeric_results = list (executor.map (
@@ -60,7 +58,6 @@ class DataCleaner:
                 for col, cleaned_data in zip (numeric_cols, numeric_results):
                     result [col] = cleaned_data
 
-        # Process categorical columns in parallel
         if len (categorical_cols) > 0:
             with ThreadPoolExecutor (max_workers=self.num_workers) as executor:
                 categorical_results = list (executor.map (
@@ -70,7 +67,6 @@ class DataCleaner:
                 for col, cleaned_data in zip (categorical_cols, categorical_results):
                     result [col] = cleaned_data
 
-        # Remove duplicates efficiently
         result.drop_duplicates (inplace=True)
 
         logger.info (f"Cleaned data shape: {result.shape}")

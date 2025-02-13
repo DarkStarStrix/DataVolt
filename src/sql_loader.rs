@@ -4,7 +4,6 @@ use std::error::Error;
 
 #[derive(Serialize)]
 struct Record {
-    // Define your record fields here
     id: i32,
     value: String,
 }

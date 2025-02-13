@@ -8,6 +8,5 @@ def generate_dense_data(num_samples=100, num_features=10):
     return df
 
 
-# Example usage
 dense_data = generate_dense_data ()
 print (dense_data.head ())

@@ -1,7 +1,6 @@
 import os
 from setuptools import setup, find_packages
 
-# Check if README.md exists
 readme = "README.md"
 current_dir = os.getcwd()
 print(f"Current working directory: {current_dir}")

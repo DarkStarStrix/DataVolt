@@ -4,7 +4,6 @@ import numpy as np
 class DataGenerator:
     @staticmethod
     def generate_data(num_samples):
-        # Generate random data
         data = pd.DataFrame({
             'id': np.arange(num_samples),
             'value': np.random.rand(num_samples)
@@ -13,7 +12,6 @@ class DataGenerator:
 
     @staticmethod
     def generate_data_with_schema(schema, num_samples):
-        # Generate data based on schema
         data = {}
         for column, dtype in schema.items():
             if dtype == 'str':

@@ -1,5 +1,3 @@
-# ETL/DatabaseETL.py
-
 import sqlite3
 from ETL.ETL_pipeline import ETLBase
 
@@ -19,7 +17,7 @@ class DatabaseETL(ETLBase):
     def transform(self, data):
         transformed_data = []
         for row in data:
-            transformed_row = (row[0], row[1].upper(), row[2] * 1.1)  # Example transformation
+            transformed_row = (row[0], row[1].upper(), row[2] * 1.1)
             transformed_data.append(transformed_row)
         return transformed_data
 

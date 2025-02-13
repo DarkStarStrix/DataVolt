@@ -9,7 +9,7 @@ import numpy as np
 from dataclasses import dataclass
 from matplotlib.gridspec import GridSpec
 
-# Configure logging
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -31,7 +31,6 @@ def _measure_performance(loader) -> PerformanceMetric:
     start_memory = process.memory_info().rss
     start_cpu = process.cpu_percent(interval=None)
 
-    # Generate data
     loader.generate_data (10000)
 
     end_time = time.time()
@@ -57,7 +56,6 @@ class PerformanceMonitor:
         self.num_runs = num_runs
         self.metrics: List[PerformanceMetric] = []
 
-        # Set up custom style settings
         self.colors = {
             'primary': '#2E86AB',
             'secondary': '#F24236',
@@ -65,7 +63,6 @@ class PerformanceMonitor:
             'background': '#F8F9FA'
         }
 
-        # Configure Seaborn style
         sns.set_theme(style="whitegrid")
         sns.set_palette([self.colors['primary'], self.colors['secondary'], self.colors['tertiary']])
 
@@ -106,24 +103,20 @@ class PerformanceMonitor:
 
         df = pd.DataFrame([vars(m) for m in self.metrics])
 
-        # Create a figure with custom layout
         fig = plt.figure(figsize=(20, 12))
         gs = GridSpec(2, 2, figure=fig)
 
-        # Set the figure background
+
         fig.patch.set_facecolor(self.colors['background'])
 
-        # 1. Time and Memory Plot (Top Left)
         ax1 = fig.add_subplot(gs[0, 0])
         ax1.set_facecolor(self.colors['background'])
 
-        # Bar plot for time
         ax1.bar(df['loader_name'], df['time_taken'],
                 color=self.colors['primary'], alpha=0.7)
         ax1.set_ylabel('Time (seconds)', color=self.colors['primary'], fontsize=12)
         ax1.tick_params(axis='y', labelcolor=self.colors['primary'])
 
-        # Line plot for memory
         ax2 = ax1.twinx()
         ax2.plot(df['loader_name'], df['memory_used'],
                  color=self.colors['secondary'],
@@ -132,11 +125,9 @@ class PerformanceMonitor:
                        fontsize=12)
         ax2.tick_params(axis='y', labelcolor=self.colors['secondary'])
 
-        # Add title
         ax1.set_title('Time and Memory Usage by Data generator',
                       pad=20, fontsize=14, fontweight='bold')
 
-        # 2. CPU Usage Plot (Top Right)
         ax3 = fig.add_subplot(gs[0, 1])
         ax3.set_facecolor(self.colors['background'])
 
@@ -146,21 +137,17 @@ class PerformanceMonitor:
                       pad=20, fontsize=14, fontweight='bold')
         ax3.set_ylabel('CPU Usage (%)', fontsize=12)
 
-        # Add value labels
         for bar in cpu_bars:
             height = bar.get_height()
             ax3.text(bar.get_x() + bar.get_width() / 2., height,
                      f'{height:.1f}%',
                      ha='center', va='bottom')
 
-        # Global figure adjustments
         plt.suptitle('Data Generation Performance Analysis',
                      fontsize=16, fontweight='bold', y=0.95)
 
-        # Adjust layouts and rotate labels
         for ax in [ax1, ax3]:
             ax.tick_params(axis='x', rotation=45, labelsize=10)
-            # Customize grid
             ax.grid(True, linestyle='--', alpha=0.7)
 
         plt.tight_layout()
@@ -198,17 +185,14 @@ class PerformanceMonitor:
 
         return "\n".join(report)
 
-# Example usage
+
 if __name__ == "__main__":
     from Data_Generators.data_generator import DataGenerator
 
-    # Initialize data generator
     data_gen = DataGenerator()
 
-    # Create and run performance monitor
     monitor = PerformanceMonitor([data_gen], num_runs=3)
     monitor.run_benchmarks()
 
-    # Generate visualizations and report
     monitor.plot_metrics(save_path="data_gen_performance.png")
     print(monitor.generate_report())

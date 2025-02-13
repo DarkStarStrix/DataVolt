@@ -54,7 +54,6 @@ class Scaler:
         numeric_cols = result.select_dtypes (include=['int64', 'float64']).columns
 
         if len (numeric_cols) > 0:
-            # Process columns in parallel
             with ThreadPoolExecutor (max_workers=self.num_workers) as executor:
                 scaled_cols = list (executor.map (
                     lambda col: self._scale_column (result [col]),

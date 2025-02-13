@@ -1,7 +1,3 @@
-# voltform/main.py
-# make a simple Main to test and run the VoltForm system
-
-# VoltForm/Main.py
 import yaml
 from VoltForm.Monitoring import MonitoringPlugin
 
@@ -17,4 +13,3 @@ class Main:
 
 if __name__ == '__main__':
     Main.main('C:/Users/kunya/PycharmProjects/DataVolt/VoltForm/Voltform_example.yaml')
-# Run the Main class with the configuration file path

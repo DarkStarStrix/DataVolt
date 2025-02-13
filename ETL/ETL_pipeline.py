@@ -1,5 +1,3 @@
-# make an ETL pipeline to extract data from the source, transform it and load it into the database
-
 import sys
 
 

@@ -1,4 +1,3 @@
-# Loaders/Vector_database.py
 import sqlalchemy
 from sqlalchemy import Table, Column, Integer, Float, MetaData
 

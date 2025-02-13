@@ -8,6 +8,5 @@ def generate_sparse_data(num_samples=100, num_features=10, density=0.1):
     return df
 
 
-# Example usage
 sparse_data = generate_sparse_data ()
 print (sparse_data.head ())

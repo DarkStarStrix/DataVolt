@@ -1,6 +1,4 @@
-# voltform/plugins/monitoring.py
 
-# VoltForm/Monitoring.py
 class MonitoringPlugin:
     def __init__(self):
         self.config = None

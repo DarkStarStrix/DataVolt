@@ -11,7 +11,7 @@ def create_tree(path, tree, parent=None):
 def main():
     path = 'C:/Users/kunya/PycharmProjects/DataVolt'
     tree = Tree()
-    tree.create_node(os.path.basename(path), path)  # root node
+    tree.create_node(os.path.basename(path), path)
     create_tree(path, tree, parent=path)
     tree.show()
 

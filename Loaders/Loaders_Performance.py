@@ -9,7 +9,6 @@ import numpy as np
 from dataclasses import dataclass
 from matplotlib.gridspec import GridSpec
 
-# Configure logging with a more detailed format
 logging.basicConfig (
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
@@ -35,7 +34,6 @@ def _measure_performance(loader) -> PerformanceMetric:
     start_memory = process.memory_info ().rss
     start_cpu = process.cpu_percent (interval=None)
 
-    # Load data
     data = loader.load_data ()
     data_size = len (data)
 
@@ -66,7 +64,6 @@ class PerformanceMonitor:
         self.num_runs = num_runs
         self.metrics: List [PerformanceMetric] = []
 
-        # Set up custom style settings
         self.colors = {
             'primary': '#2E86AB',
             'secondary': '#F24236',
@@ -74,7 +71,6 @@ class PerformanceMonitor:
             'background': '#F8F9FA'
         }
 
-        # Configure Seaborn style
         sns.set_theme (style="whitegrid")
         sns.set_palette ([self.colors ['primary'], self.colors ['secondary'], self.colors ['tertiary']])
 
@@ -117,24 +113,19 @@ class PerformanceMonitor:
 
         df = pd.DataFrame ([vars (m) for m in self.metrics])
 
-        # Create a figure with custom layout
         fig = plt.figure (figsize=(20, 12))
         gs = GridSpec (2, 2, figure=fig)
 
-        # Set the figure background
         fig.patch.set_facecolor (self.colors ['background'])
 
-        # 1. Time and Memory Plot (Top Left)
         ax1 = fig.add_subplot (gs [0, 0])
         ax1.set_facecolor (self.colors ['background'])
 
-        # Bar plot for time
         ax1.bar (df ['loader_name'], df ['time_taken'],
                  color=self.colors ['primary'], alpha=0.7)
         ax1.set_ylabel ('Time (seconds)', color=self.colors ['primary'], fontsize=12)
         ax1.tick_params (axis='y', labelcolor=self.colors ['primary'])
 
-        # Line plot for memory
         ax2 = ax1.twinx ()
         ax2.plot (df ['loader_name'], df ['memory_used'],
                   color=self.colors ['secondary'],
@@ -143,19 +134,15 @@ class PerformanceMonitor:
                         fontsize=12)
         ax2.tick_params (axis='y', labelcolor=self.colors ['secondary'])
 
-        # Add title
         ax1.set_title ('Time and Memory Usage by Loader',
                        pad=20, fontsize=14, fontweight='bold')
 
-        # 2. Throughput Plot (Top Right)
         ax3 = fig.add_subplot (gs [0, 1])
         ax3.set_facecolor (self.colors ['background'])
 
-        # Create throughput bars
         throughput_bars = ax3.bar (df ['loader_name'], df ['throughput'],
                                    color=self.colors ['tertiary'], alpha=0.7)
 
-        # Add value labels on top of bars
         for bar in throughput_bars:
             height = bar.get_height ()
             ax3.text (bar.get_x () + bar.get_width () / 2., height,
@@ -166,7 +153,6 @@ class PerformanceMonitor:
                        pad=20, fontsize=14, fontweight='bold')
         ax3.set_ylabel ('Records per Second', fontsize=12)
 
-        # 3. CPU Usage Plot (Bottom Left)
         ax4 = fig.add_subplot (gs [1, 0])
         ax4.set_facecolor (self.colors ['background'])
 
@@ -176,21 +162,18 @@ class PerformanceMonitor:
                        pad=20, fontsize=14, fontweight='bold')
         ax4.set_ylabel ('CPU Usage (%)', fontsize=12)
 
-        # Add value labels
         for bar in cpu_bars:
             height = bar.get_height ()
             ax4.text (bar.get_x () + bar.get_width () / 2., height,
                       f'{height:.1f}%',
                       ha='center', va='bottom')
 
-        # 4. Data Size Plot (Bottom Right)
         ax5 = fig.add_subplot (gs [1, 1])
         ax5.set_facecolor (self.colors ['background'])
 
         size_bars = ax5.bar (df ['loader_name'], df ['data_size'],
                              color=self.colors ['tertiary'], alpha=0.7)
 
-        # Add value labels
         for bar in size_bars:
             height = bar.get_height ()
             ax5.text (bar.get_x () + bar.get_width () / 2., height,
@@ -201,14 +184,11 @@ class PerformanceMonitor:
                        pad=20, fontsize=14, fontweight='bold')
         ax5.set_ylabel ('Number of Records', fontsize=12)
 
-        # Global figure adjustments
         plt.suptitle ('Data Loader Performance Analysis',
                       fontsize=16, fontweight='bold', y=0.95)
 
-        # Adjust layouts and rotate labels
         for ax in [ax1, ax3, ax4, ax5]:
             ax.tick_params (axis='x', rotation=45, labelsize=10)
-            # Customize grid
             ax.grid (True, linestyle='--', alpha=0.7)
 
         plt.tight_layout ()
@@ -252,7 +232,6 @@ class PerformanceMonitor:
         return "\n".join (report)
 
 
-# Example usage
 if __name__ == "__main__":
     from Loaders.csv_loader import CSVLoader
     # from Loaders.sql_loader import SQLLoader
@@ -265,10 +244,8 @@ if __name__ == "__main__":
         # S3Loader(bucket_name="your_bucket", file_key="your_file_key")
     ]
 
-    # Create and run performance monitor
     monitor = PerformanceMonitor (loaders, num_runs=3)
     monitor.run_benchmarks ()
 
-    # Generate visualizations and report
     monitor.plot_metrics (save_path="loader_performance.png")
     print (monitor.generate_report ())

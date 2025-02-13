@@ -4,20 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Scala distributed system">
-      <change afterPath="$PROJECT_DIR$/$HOME/.pypirc" afterDir="false" />
+    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="New Workflow">
+      <change afterPath="$PROJECT_DIR$/API.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Credentials.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/dependabot.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/dependabot.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/python-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-publish.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Market_Mind/Dashboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Market_Mind/Report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Market_Mind/Transformer_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Market_Mind/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Market_Mind/data_ingestion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Market_Mind/seo_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Market_Mind/text_preprocessing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Market_Mind/vector_database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Market_Mind/workflow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_21_2025_12_18_PM_[Changes]/loader_performance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_21_2025_12_18_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_21_2025_12_18_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataVolt.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/DataVolt.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataVolt.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DataVolt.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataVolt.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DataVolt.egg-info/top_level.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/datavolt-0.0.1.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/datavolt-0.0.1.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/c.list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/gs.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/v.list" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +39,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Dockerfile" />
         <option value="Python Script" />
       </list>
     </option>
@@ -173,6 +186,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.Dockerfile.executor": "Run",
+    "Docker.docker-compose.yml.prometheus: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.web: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "NIXITCH_NIXPKGS_CONFIG": "",
     "NIXITCH_NIX_CONF_DIR": "",
     "NIXITCH_NIX_OTHER_STORES": "",
@@ -193,9 +210,12 @@
     "Python tests.pytest for test_etl.TestETLProcessor.executor": "Run",
     "Python tests.pytest in Test_data_loader.py.executor": "Run",
     "Python tests.pytest in VoltForm_Tests.py.executor": "Run",
+    "Python.API.executor": "Run",
+    "Python.Advanced_Data_Pipeline.executor": "Run",
     "Python.Basic_Pipeline.executor": "Run",
     "Python.Basic_Pipeline_Performance.executor": "Run",
     "Python.CSV_ETL.executor": "Run",
+    "Python.Dashboard.executor": "Run",
     "Python.Data_Gen_Performance.executor": "Run",
     "Python.Data_Generation_performance.executor": "Run",
     "Python.Dense_Data_Generator.executor": "Run",
@@ -206,13 +226,23 @@
     "Python.Main.executor": "Run",
     "Python.Performance metrics.executor": "Run",
     "Python.Pipeline.executor": "Run",
+    "Python.Report.executor": "Run",
     "Python.Sparse_Data_Generator.executor": "Run",
+    "Python.Test_Scrapper.executor": "Run",
     "Python.Test_suite.executor": "Run",
     "Python.Tokenizing_Text_Data.executor": "Run",
+    "Python.Transformer_model.executor": "Run",
     "Python.Visualize_and_provision.executor": "Run",
+    "Python.X_farm.executor": "Run",
+    "Python.data_ingestion.executor": "Run",
     "Python.encoding.executor": "Run",
+    "Python.praw.executor": "Run",
+    "Python.seo_model.executor": "Run",
     "Python.setup.executor": "Run",
+    "Python.text_preprocessing.executor": "Run",
     "Python.tree.executor": "Run",
+    "Python.vector_upload.executor": "Run",
+    "Python.workflow.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -223,15 +253,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.dsoftware.ghmanager",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "writerside.last.selected.productDataFlux": "gs"
   },
   "keyToStringList": {
     "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
 }]]></component>
-  <component name="RunManager" selected="Python.setup">
-    <configuration name="Data_Generation_performance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Dashboard">
+    <configuration name="Dashboard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -240,11 +270,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data_Generators" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Market_Mind" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_Generators/Data_Generation_performance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Market_Mind/Dashboard.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,7 +283,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Loaders_Performance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="data_ingestion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -262,11 +292,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Loaders" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Market_Mind" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Loaders/Loaders_Performance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Market_Mind/data_ingestion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -275,7 +305,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="seo_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -284,11 +314,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/VoltForm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Market_Mind" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/VoltForm/Main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Market_Mind/seo_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -297,7 +327,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="text_preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -306,11 +336,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Market_Mind" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Market_Mind/text_preprocessing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -319,7 +349,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="workflow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -328,33 +358,45 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Market_Mind" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Market_Mind/workflow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.setup" />
-        <item itemvalue="Python.tree" />
-        <item itemvalue="Python.Data_Generation_performance" />
-        <item itemvalue="Python.Loaders_Performance" />
-        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.Dashboard" />
+        <item itemvalue="Python.workflow" />
+        <item itemvalue="Python.text_preprocessing" />
+        <item itemvalue="Python.data_ingestion" />
+        <item itemvalue="Python.seo_model" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+        <option value="bundled-python-sdk-a5bc9544c897-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.23654.177" />
       </set>
     </attachedChunks>
   </component>
@@ -588,7 +630,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737649902734</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="New Workflow">
+      <option name="closed" value="true" />
+      <created>1737756834281</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1737756834281</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -607,7 +657,8 @@
     <MESSAGE value="Rust Bindings README.md update performance benchmarks" />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Scala distributed system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scala distributed system" />
+    <MESSAGE value="New Workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Workflow" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">

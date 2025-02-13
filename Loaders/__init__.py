@@ -1,5 +1,3 @@
-# Loaders/__init__.py
-
 from Loaders.csv_loader import CSVLoader
 from Loaders.Custom_loader import CustomLoader
 from Loaders.s3_loader import S3Loader

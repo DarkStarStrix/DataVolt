@@ -20,8 +20,8 @@ infrastructure:
       encryption: "AES256"
       versioning: true
       lifecycle_rules:
-        - transition_to_glacier: 30  # Days before moving to Glacier
-        - delete_after: 365  # Days before deletion
+        - transition_to_glacier: 30
+        - delete_after: 365
 
   etl_pipeline:
     name: "financial_etl_pipeline"
@@ -46,7 +46,7 @@ monitoring:
   enabled: true
   logs:
     provider: "cloudwatch"
-    retention: 7  # Days to retain logs
+    retention: 7
   alerts:
     - event: "ETL_FAILURE"
       action: "send_email"

@@ -15,6 +15,5 @@ def generate_other_features(num_samples=100):
     return df
 
 
-# Example usage
 other_features_data = generate_other_features ()
 print (other_features_data.head ())

@@ -1,4 +1,3 @@
-# voltform/visualize_and_provision.py
 import yaml
 from VoltForm import validate_voltform
 from VoltForm.engine import provision_compute_cluster
@@ -29,13 +28,10 @@ def provision_infrastructure(config):
 def run_workflow(config_file):
     config = parse_yaml(config_file)
 
-    # Validate the configuration
     if validate_voltform(config):
-        # Visualize the configuration as a Mermaid diagram
         mermaid_diagram = visualize_yaml_as_mermaid(config)
         print("Mermaid Diagram:\n", mermaid_diagram)
 
-        # Ask user to confirm provisioning
         user_input = input("Do you want to provision the infrastructure? (yes/no): ")
         if user_input.lower() == 'yes':
             instances = provision_infrastructure(config)

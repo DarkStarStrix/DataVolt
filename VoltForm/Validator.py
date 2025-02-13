@@ -1,4 +1,3 @@
-# voltform/validator.py
 from jsonschema import validate, ValidationError
 
 schema = {

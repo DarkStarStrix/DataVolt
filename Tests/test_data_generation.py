@@ -1,4 +1,3 @@
-# We will test the data generation functionality in this file
 import unittest
 from Data_Generators.data_generator import DataGenerator
 

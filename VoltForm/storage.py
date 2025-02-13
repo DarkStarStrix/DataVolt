@@ -1,5 +1,3 @@
-# voltform/plugins/storage.py
-
 from VoltForm.base import Plugin
 import boto3
 
@@ -13,5 +11,4 @@ class StoragePlugin(Plugin):
     def execute(self):
         s3 = boto3.client('s3', region_name=self.config['region'])
         s3.create_bucket(Bucket=self.config['bucket_name'])
-        # Additional configuration like encryption, versioning, lifecycle rules
         return f"Bucket {self.config['bucket_name']} created"
