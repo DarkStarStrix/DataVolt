@@ -4,32 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="New Workflow">
-      <change afterPath="$PROJECT_DIR$/API.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Credentials.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market_Mind/Dashboard.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market_Mind/Report.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market_Mind/Transformer_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market_Mind/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market_Mind/data_ingestion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market_Mind/seo_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market_Mind/text_preprocessing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market_Mind/vector_database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Market_Mind/workflow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prometheus.yml" afterDir="false" />
+    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Refactor/Cleanup">
+      <change afterPath="$PROJECT_DIR$/Tokenizers/Build_tokenizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tokenizers/Main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tokenizers/entropy_ranker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tokenizers/json_format.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tokenizers/label_tokens.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tokenizers/pretraining/dataset_stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tokenizers/pretraining/instruction_formatter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tokenizers/pretraining/preprocess_raw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MarineMLKit/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Allanatrix" beforeDir="false" afterPath="$PROJECT_DIR$/../Allanatrix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/.idea/AutoConsulting.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/.idea/csv-editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/.idea/git_toolbox_blame.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/Send_Email.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/collect_contacts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/companies.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AutoConsulting/contacts.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Azure/.idea/dictionaries/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Azure/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Azure/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Azure/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Azure/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Azure_Sky/.idea/Azure.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Azure_Sky/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Azure_Sky/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Azure_Sky/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Azure_Sky/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Azure_Sky/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Azure_Sky/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../Azure_Sky/pyproject.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_21_2025_12_18_PM_[Changes]/loader_performance.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_21_2025_12_18_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_21_2025_12_18_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/c.list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/gs.tree" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/v.list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/.rustc_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelixSynth" beforeDir="false" afterPath="$PROJECT_DIR$/../HelixSynth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Saved Games/desktop.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logpro/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logpro/.idea/git_toolbox_blame.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logpro/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logpro/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logpro/.idea/logpro.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logpro/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logpro/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logpro/Log_Pro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logpro/cleanup_log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logpro/example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logpro/test_file.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,6 +238,7 @@
     "Python.Advanced_Data_Pipeline.executor": "Run",
     "Python.Basic_Pipeline.executor": "Run",
     "Python.Basic_Pipeline_Performance.executor": "Run",
+    "Python.Build_tokenizer.executor": "Run",
     "Python.CSV_ETL.executor": "Run",
     "Python.Dashboard.executor": "Run",
     "Python.Data_Gen_Performance.executor": "Run",
@@ -236,6 +261,7 @@
     "Python.X_farm.executor": "Run",
     "Python.data_ingestion.executor": "Run",
     "Python.encoding.executor": "Run",
+    "Python.json_format.executor": "Run",
     "Python.praw.executor": "Run",
     "Python.seo_model.executor": "Run",
     "Python.setup.executor": "Run",
@@ -244,6 +270,7 @@
     "Python.vector_upload.executor": "Run",
     "Python.workflow.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -260,7 +287,29 @@
     "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Dashboard">
+  <component name="RunManager" selected="Python.Main">
+    <configuration name="Build_tokenizer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataStream" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tokenizers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tokenizers/Build_tokenizer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Dashboard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
@@ -283,7 +332,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="data_ingestion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -292,11 +341,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Market_Mind" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tokenizers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Market_Mind/data_ingestion.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tokenizers/Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -305,7 +354,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="seo_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="json_format" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -314,33 +363,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Market_Mind" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tokenizers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Market_Mind/seo_model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="text_preprocessing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DataStream" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Market_Mind" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Market_Mind/text_preprocessing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tokenizers/json_format.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -385,18 +412,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.json_format" />
+        <item itemvalue="Python.Build_tokenizer" />
         <item itemvalue="Python.Dashboard" />
         <item itemvalue="Python.workflow" />
-        <item itemvalue="Python.text_preprocessing" />
-        <item itemvalue="Python.data_ingestion" />
-        <item itemvalue="Python.seo_model" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-a5bc9544c897-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.23654.177" />
+        <option value="bundled-python-sdk-dfff61a61320-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.159" />
       </set>
     </attachedChunks>
   </component>
@@ -638,7 +665,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737756834281</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Refactor/Cleanup">
+      <option name="closed" value="true" />
+      <created>1739482130547</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1739482130547</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +693,8 @@
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Scala distributed system" />
     <MESSAGE value="New Workflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Workflow" />
+    <MESSAGE value="Refactor/Cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor/Cleanup" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
