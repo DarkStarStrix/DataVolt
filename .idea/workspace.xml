@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Refactor/Cleanup">
-      <change afterPath="$PROJECT_DIR$/Tokenizers/Build_tokenizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tokenizers/Main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tokenizers/entropy_ranker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tokenizers/json_format.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tokenizers/label_tokens.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tokenizers/pretraining/dataset_stats.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tokenizers/pretraining/instruction_formatter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tokenizers/pretraining/preprocess_raw.py" afterDir="false" />
+    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Add preprocessing and analysis tools for scientific datasets">
       <change afterPath="$PROJECT_DIR$/../MarineMLKit/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Allanatrix" beforeDir="false" afterPath="$PROJECT_DIR$/../Allanatrix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoConsulting/.env" beforeDir="false" />
@@ -39,8 +31,6 @@
       <change beforePath="$PROJECT_DIR$/../Azure_Sky/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Azure_Sky/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Azure_Sky/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Azure_Sky/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Azure_Sky/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../Azure_Sky/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HelixSynth" beforeDir="false" afterPath="$PROJECT_DIR$/../HelixSynth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Saved Games/desktop.ini" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../logpro/.idea/.gitignore" beforeDir="false" />
@@ -694,7 +684,8 @@
     <MESSAGE value="Scala distributed system" />
     <MESSAGE value="New Workflow" />
     <MESSAGE value="Refactor/Cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor/Cleanup" />
+    <MESSAGE value="Add preprocessing and analysis tools for scientific datasets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add preprocessing and analysis tools for scientific datasets" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
