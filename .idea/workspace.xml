@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Add preprocessing and analysis tools for scientific datasets">
+    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Add Pipfile for package management and update workspace configuration for dataset tools">
       <change afterPath="$PROJECT_DIR$/../MarineMLKit/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Allanatrix" beforeDir="false" afterPath="$PROJECT_DIR$/../Allanatrix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AutoConsulting/.env" beforeDir="false" />
@@ -198,85 +198,85 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.Dockerfile.executor": "Run",
-    "Docker.docker-compose.yml.prometheus: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.web: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "NIXITCH_NIXPKGS_CONFIG": "",
-    "NIXITCH_NIX_CONF_DIR": "",
-    "NIXITCH_NIX_OTHER_STORES": "",
-    "NIXITCH_NIX_PATH": "",
-    "NIXITCH_NIX_PROFILES": "",
-    "NIXITCH_NIX_REMOTE": "",
-    "NIXITCH_NIX_USER_PROFILE_DIR": "",
-    "Python tests.Python tests for Test_Pipeline.TestPipeline.executor": "Run",
-    "Python tests.Python tests for Test_data_loader.TestCSVLoader.executor": "Run",
-    "Python tests.Python tests for Test_data_loader.TestEncoder.executor": "Run",
-    "Python tests.Python tests for Test_data_loader.TestIntegration.executor": "Run",
-    "Python tests.Python tests in Performance metrics.py.executor": "Run",
-    "Python tests.Python tests in Test_data_loader.py.executor": "Run",
-    "Python tests.pytest for Test_data_loader.TestIntegration.executor": "Run",
-    "Python tests.pytest for VoltForm_Tests.TestVoltForm.executor": "Run",
-    "Python tests.pytest for VoltForm_Tests.TestVoltFormMain.executor": "Run",
-    "Python tests.pytest for test_data_generation.TestDataGenerator.executor": "Run",
-    "Python tests.pytest for test_etl.TestETLProcessor.executor": "Run",
-    "Python tests.pytest in Test_data_loader.py.executor": "Run",
-    "Python tests.pytest in VoltForm_Tests.py.executor": "Run",
-    "Python.API.executor": "Run",
-    "Python.Advanced_Data_Pipeline.executor": "Run",
-    "Python.Basic_Pipeline.executor": "Run",
-    "Python.Basic_Pipeline_Performance.executor": "Run",
-    "Python.Build_tokenizer.executor": "Run",
-    "Python.CSV_ETL.executor": "Run",
-    "Python.Dashboard.executor": "Run",
-    "Python.Data_Gen_Performance.executor": "Run",
-    "Python.Data_Generation_performance.executor": "Run",
-    "Python.Dense_Data_Generator.executor": "Run",
-    "Python.Example_EDA.executor": "Run",
-    "Python.Example_PCA_SVD.executor": "Run",
-    "Python.General_Data_Features.executor": "Run",
-    "Python.Loaders_Performance.executor": "Run",
-    "Python.Main.executor": "Run",
-    "Python.Performance metrics.executor": "Run",
-    "Python.Pipeline.executor": "Run",
-    "Python.Report.executor": "Run",
-    "Python.Sparse_Data_Generator.executor": "Run",
-    "Python.Test_Scrapper.executor": "Run",
-    "Python.Test_suite.executor": "Run",
-    "Python.Tokenizing_Text_Data.executor": "Run",
-    "Python.Transformer_model.executor": "Run",
-    "Python.Visualize_and_provision.executor": "Run",
-    "Python.X_farm.executor": "Run",
-    "Python.data_ingestion.executor": "Run",
-    "Python.encoding.executor": "Run",
-    "Python.json_format.executor": "Run",
-    "Python.praw.executor": "Run",
-    "Python.seo_model.executor": "Run",
-    "Python.setup.executor": "Run",
-    "Python.text_preprocessing.executor": "Run",
-    "Python.tree.executor": "Run",
-    "Python.vector_upload.executor": "Run",
-    "Python.workflow.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/kunya/PycharmProjects/DataStream",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "writerside.last.selected.productDataFlux": "gs"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.prometheus: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.web: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;NIXITCH_NIXPKGS_CONFIG&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_CONF_DIR&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_OTHER_STORES&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_PATH&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_PROFILES&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_REMOTE&quot;: &quot;&quot;,
+    &quot;NIXITCH_NIX_USER_PROFILE_DIR&quot;: &quot;&quot;,
+    &quot;Python tests.Python tests for Test_Pipeline.TestPipeline.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Test_data_loader.TestCSVLoader.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Test_data_loader.TestEncoder.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for Test_data_loader.TestIntegration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in Performance metrics.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in Test_data_loader.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for Test_data_loader.TestIntegration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for VoltForm_Tests.TestVoltForm.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for VoltForm_Tests.TestVoltFormMain.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_data_generation.TestDataGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_etl.TestETLProcessor.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in Test_data_loader.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in VoltForm_Tests.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.API.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Advanced_Data_Pipeline.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Basic_Pipeline.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Basic_Pipeline_Performance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Build_tokenizer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CSV_ETL.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Dashboard.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Data_Gen_Performance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Data_Generation_performance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Dense_Data_Generator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Example_EDA.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Example_PCA_SVD.executor&quot;: &quot;Run&quot;,
+    &quot;Python.General_Data_Features.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Loaders_Performance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Performance metrics.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Pipeline.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Report.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Sparse_Data_Generator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test_Scrapper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Test_suite.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Tokenizing_Text_Data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Transformer_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Visualize_and_provision.executor&quot;: &quot;Run&quot;,
+    &quot;Python.X_farm.executor&quot;: &quot;Run&quot;,
+    &quot;Python.data_ingestion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.encoding.executor&quot;: &quot;Run&quot;,
+    &quot;Python.json_format.executor&quot;: &quot;Run&quot;,
+    &quot;Python.praw.executor&quot;: &quot;Run&quot;,
+    &quot;Python.seo_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.setup.executor&quot;: &quot;Run&quot;,
+    &quot;Python.text_preprocessing.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tree.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vector_upload.executor&quot;: &quot;Run&quot;,
+    &quot;Python.workflow.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kunya/PycharmProjects/DataStream&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;writerside.last.selected.productDataFlux&quot;: &quot;gs&quot;
   },
-  "keyToStringList": {
-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.Main">
     <configuration name="Build_tokenizer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataStream" />
@@ -685,7 +685,8 @@
     <MESSAGE value="New Workflow" />
     <MESSAGE value="Refactor/Cleanup" />
     <MESSAGE value="Add preprocessing and analysis tools for scientific datasets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add preprocessing and analysis tools for scientific datasets" />
+    <MESSAGE value="Add Pipfile for package management and update workspace configuration for dataset tools" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Pipfile for package management and update workspace configuration for dataset tools" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">

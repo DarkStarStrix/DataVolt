@@ -99,3 +99,11 @@ dash~=2.18.2
 requests~=2.26.0
 wordcloud~=1.9.4
 openai~=1.61.1
+tokenizers~=0.21.1
+arxiv~=2.2.0
+bio~=1.8.0
+biopython~=1.85
+pubmed_parser~=0.5.1
+pdfminer.six~=20221105
+pubmed_parser~=0.5.1
+datasets
