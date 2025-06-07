@@ -9,12 +9,16 @@ rayon = "1.8"
 log = "0.4"
 sysinfo = "0.29"
 thiserror = "1.0"
-sqlx = { version = "0.5", features = ["runtime-tokio-rustls", "postgres"] }
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "postgres"] } # Updated from 0.5 to fix binary protocol issue
 serde = { version = "1.0", features = ["derive"] }
 tokio = { version = "1", features = ["full"] }
-rusoto_core = "0.46.0"
+rusoto_core = { version = "0.46.0", features = ["rustls"] }
 rusoto_s3 = "0.46.0"
 csv = "1.1"
+
+[dependencies.ring]
+version = "=0.17.7" # Pin to specific version that fixed AES overflow panic
+features = ["std"]
 
 [dev-dependencies]
 tempfile = "3.8"
