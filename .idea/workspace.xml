@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Add preprocessing modules for scientific text analysis and dataset management">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-    </list>
+    <list default="true" id="9554aeb2-5cbe-4af6-887c-c88a1ace92fd" name="Changes" comment="Update dependencies to fix vulnerabilities and improve stability" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -664,7 +660,8 @@
     <MESSAGE value="Add preprocessing and analysis tools for scientific datasets" />
     <MESSAGE value="Add Pipfile for package management and update workspace configuration for dataset tools" />
     <MESSAGE value="Add preprocessing modules for scientific text analysis and dataset management" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add preprocessing modules for scientific text analysis and dataset management" />
+    <MESSAGE value="Update dependencies to fix vulnerabilities and improve stability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update dependencies to fix vulnerabilities and improve stability" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
