@@ -1,4 +1,4 @@
-# DataVolt: Enterprise Data Pipeline Framework
+# DataVolt: Modular Enterprise Data Engineering Framework
 
 <p align="center">
   <img src="DataVolt Logo.png" alt="DataVolt Logo" width="200"/>
@@ -11,98 +11,118 @@
 ![PyPI](https://img.shields.io/badge/pypi-v0.0.1-blue)
 [![CI](https://github.com/DarkStarStrix/DataStream/actions/workflows/Tests.yml/badge.svg)](https://github.com/DarkStarStrix/DataStream/actions/workflows/Tests.yml)
 
-## Introduction
+## Overview
 
-DataVolt is an enterprise-grade framework for building and maintaining scalable data engineering pipelines.
-It provides a comprehensive suite of tools for data ingestion, transformation, and processing,
-enabling organizations to standardize their data operations and speed up development cycles.
+**DataVolt** is an enterprise-grade framework for building and maintaining scalable data engineering pipelines. It provides a comprehensive suite of tools for data ingestion, transformation, and processing, enabling organizations to standardize their data operations and accelerate development cycles.
 
-## Core Capabilities
+### Modular VoltModule Architecture
 
-DataVolt delivers three primary value propositions:
+At the core of DataVolt is the concept of **VoltModules**: modular, domain-scoped directories (mini_dirs) that encapsulate a single use case or data engineering workflow. Each VoltModule follows a consistent internal structure and pattern, making it easy to:
 
-1. **Pipeline Standardization**: Unified interfaces for data ingestion, transformation, and export operations
-2. **Operational Efficiency**: Automated workflow orchestration and preprocessing capabilities
-3. **Enterprise Integration**: Native support for cloud storage, SQL databases, and machine learning frameworks
+- Reuse, extend, or compose modules for new domains or projects
+- Standardize data engineering practices across teams
+- Rapidly spin up new pipelines by combining or customizing VoltModules
 
-## Technical Architecture
+VoltModules can cover a wide range of data engineering needs—from market analysis to tokenization, feature engineering, and beyond. The repository provides a rich set of ready-to-use modules, and you can easily add your own or extend existing ones.
+
+## Repository Structure
+
+> **Note:** The structure below is an illustrative example of how DataVolt is organized around VoltModules and shared utilities. Your actual repository may differ. To view your current structure, use a tool like `tree` or `ls` in your project root.
 
 ```
 DataVolt/
-├── loaders/           # Data Ingestion Layer
+├── modules/                # Collection of VoltModules (domain-specific mini_dirs)
+│   ├── market_analysis/    # Example VoltModule: Market Analysis
+│   │   ├── __init__.py
+│   │   └── ...             # Module-specific logic
+│   ├── tokenization/       # Example VoltModule: Tokenization
+│   │   ├── __init__.py
+│   │   └── ...
+│   └── ...                 # Add or extend VoltModules as needed
+├── loaders/                # Data Ingestion Layer (shared utilities)
 │   ├── __init__.py
-│   ├── csv_loader.py  # CSV Processing Engine
-│   ├── sql_loader.py  # SQL Database Connector
-│   ├── s3_loader.py   # Cloud Storage Interface
-│   └── custom_loader.py # Extensibility Framework
-├── preprocess/        # Data Transformation Layer
+│   └── ...
+├── preprocess/             # Data Transformation Layer (shared utilities)
 │   ├── __init__.py
-│   ├── cleaning.py    # Data Cleansing Engine
-│   ├── encoding.py    # Feature Encoding Module
-│   ├── scaling.py     # Normalization Framework
-│   ├── feature_engineering.py # Feature Generation Engine
-│   └── pipeline.py    # Pipeline Orchestrator
-└── ext/               # Extension Layer
-    ├── logger.py      # Logging Framework
-    └── custom_step.py # Custom Pipeline Interface
+│   └── ...
+├── ext/                    # Extension Layer (logging, custom steps, etc.)
+│   ├── logger.py
+│   └── ...
+└── ...
 ```
+
+- **modules/**: Houses all VoltModules, each in its own directory, following a common pattern.
+- **loaders/**, **preprocess/**, **ext/**: Provide shared utilities and frameworks for use within VoltModules or standalone.
+
+## Key Features
+
+- **VoltModules**: Modular, domain-scoped, and reusable mini_dirs for any data engineering use case
+- **Rapid Customization**: Add, extend, or compose modules to fit evolving requirements
+- **Standardization**: Consistent patterns and internal structure across all modules
+- **Comprehensive Toolkit**: Everything needed for data engineering, from ingestion to advanced analytics
 
 ## Installation
 
-Install via pip:
 ```bash
 pip install datavolt
 ```
 
-For improved dependency management:
+Or with uv:
 ```bash
 uv install datavolt
 ```
 
-## Implementation Guide
+## Quick Start
 
-### Data Ingestion
+### Using a VoltModule
+
 ```python
-from datavolt.loaders.csv_loader import CSVLoader
+from datavolt.modules.market_analysis import MarketAnalysisModule
 
-# Initialize data ingestion pipeline
-loader = CSVLoader(file_path="data.csv")
-dataset = loader.load()
+module = MarketAnalysisModule(config={...})
+result = module.run()
 ```
 
-### Data Transformation
+### Building Your Own VoltModule
+
+1. Create a new directory under `modules/` (e.g., `my_use_case/`)
+2. Add an `__init__.py` and implement your logic following the VoltModule pattern
+3. Import and use your module as needed
+
+### Example: Data Ingestion and Transformation
+
 ```python
+from datavolt.loaders.csv_loader import CSVLoader
 from datavolt.preprocess.pipeline import PreprocessingPipeline
-from datavolt.preprocess.scaling import StandardScaler
-from datavolt.preprocess.encoding import OneHotEncoder
 
-# Configure transformation pipeline
-pipeline = PreprocessingPipeline([
-    StandardScaler(),
-    OneHotEncoder()
-])
+loader = CSVLoader(file_path="data.csv")
+dataset = loader.load()
 
-# Execute transformations
+pipeline = PreprocessingPipeline([...])
 processed_dataset = pipeline.run(dataset)
 ```
 
-## Enterprise Applications
+## Extending DataVolt
 
-DataVolt is designed for organizations requiring:
+- **Add new VoltModules** for new domains or workflows
+- **Plug in tools** (e.g., new loaders, preprocessors) into existing modules
+- **Compose modules** to build complex pipelines
 
-- Standardized data preprocessing workflows
-- Scalable machine learning pipelines
-- Reproducible feature engineering processes
-- Integration with existing data infrastructure
+## Use Cases
+
+- Market analysis, tokenization, and domain-specific analytics
+- Standardized, reproducible data preprocessing
+- Scalable machine learning and feature engineering pipelines
+- Integration with cloud, SQL, and ML frameworks
 
 ## Contributing
 
-We welcome contributions from the community. Please follow these steps:
+We welcome contributions! To add a new VoltModule or extend the framework:
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/enhancement`)
-3. Commit changes (`git commit -am 'Add enhancement'`)
-4. Push to branch (`git push origin feature/enhancement`)
+2. Create a feature branch (`git checkout -b feature/my-module`)
+3. Add your module under `modules/` and follow the VoltModule pattern
+4. Commit and push your changes
 5. Open a Pull Request
 
 ## License
@@ -117,26 +137,4 @@ DataVolt is distributed under the MIT License. See `LICENSE` for details.
 
 ---
 
-Performance Benchmark Report
-
-
-Generated on: 2025-01-21 12:15:12
-Number of runs per loader: 3
-
-Loader: CSVLoader
-------------------------------
-Time Taken: 0.06-second
-Memory Used: 3.02 MB
-CPU Usage: 75.2%
-Throughput: 167,002 records/second
-Data Size: 10,000 records
-
-Performance Metrics:
-- Memory efficiency: 3,307.49 records/MB
-- Processing speed: 0.01 ms/record
-
-
-![loader_performance.png](Loaders/loader_performance.png)
-
-
-*DataVolt: Empowering Data Engineering Excellence*
+*DataVolt: Empowering Modular Data Engineering Excellence*
