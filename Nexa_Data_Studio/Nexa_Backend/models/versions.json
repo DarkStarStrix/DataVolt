@@ -1,0 +1,15 @@
+{
+    "NexaBio": {
+        "1": "NexaBio_1.pt",
+        "2": "NexaBio_2.pt"
+    },
+    "NexaAstro": {
+        "1": "NexaAstro_1.pt",
+        "2": "NexaAstro_2.pt"
+    },
+    "NexaMat": {
+        "1": "NexaMat_1.pt",
+        "2": "NexaMat_2.pt"
+    }
+}
+
