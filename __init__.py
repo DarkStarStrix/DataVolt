@@ -1,6 +1,10 @@
-# __init__.py from the Loaders directory imports all the classes from the loaders module and makes them available to the outside world.
+"""
+Top-level package entrypoint for the DataVolt toolkit.
 
-from Loaders import csv_loader, s3_loader, sql_loader
-from preprocess import Cleaning, encoding, scaling, pipeline
+Exposes helper functions to introspect the consolidated module layout.
+See ``modules/<name>/<scripts|data>`` for implementation details.
+"""
 
-__all__ = ['csv_loader', 's3_loader', 'sql_loader', 'Cleaning', 'encoding', 'scaling', 'pipeline']
+from modules import available_modules, load_module_scripts
+
+__all__ = ["available_modules", "load_module_scripts"]

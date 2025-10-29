@@ -1,1 +1,33 @@
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+.vscode/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+.env
+.venv
+.uv/
+
+temp/
+tmp/
+
 !/Credentials.env
+
+# Data artifacts
+data/**/*.csv
+data/**/*.parquet
+Tokenization/data/**/*.parquet
+Tokenization/data/**/*.csv
+modules/*/data/**/*.csv
+modules/*/data/**/*.parquet
+
+
+# Model artifacts
+models/**
+
+# Notebook checkpoints
+**/.ipynb_checkpoints/

@@ -1,7 +1,7 @@
 import uvicorn
 from fastapi import FastAPI, UploadFile, File
 
-from Loaders.csv_loader import CSVLoader
+from modules.loaders.scripts.csv_loader import CSVLoader
 from preprocess import DataCleaner, Encoder
 
 app = FastAPI()

@@ -1,5 +1,5 @@
 import unittest
-from Data_Generators.data_generator import DataGenerator
+from modules.data_generators.scripts.data_generator import DataGenerator
 
 class TestDataGenerator(unittest.TestCase):
 

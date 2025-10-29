@@ -1,5 +1,5 @@
 import unittest
-from ETL.ETL_pipeline import ETLBase
+from modules.etl.scripts.ETL_pipeline import ETLBase
 
 class TestETLProcessor(unittest.TestCase):
 
